@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  font-family: "";
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 .u-desktop {
@@ -186,5 +186,136 @@ select::-ms-expand {
     padding-right: 25px;
     padding-left: 25px;
   }
+}
+
+.p-goods {
+  padding-top: 75px;
+  padding-top: 4.6875rem;
+}
+
+.p-goods__title {
+  color: #ffef00;
+  background-color: #e9604b;
+  margin: 0 calc(50% - 50vw);
+  width: 100vw;
+  padding: 12px 0;
+  padding: 0.75rem 0;
+  text-align: center;
+  font-size: 34px;
+  font-size: 2.125rem;
+  font-weight: 400;
+}
+
+.p-goods__img {
+  margin-top: 48px;
+  margin-top: 3rem;
+  width: 100%;
+  position: relative;
+}
+
+.p-goods__img::before {
+  padding-top: 43.05%;
+  display: block;
+  content: "";
+}
+
+.p-goods__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.p-goods__img2 {
+  margin-top: 30px;
+  margin-top: 1.875rem;
+  width: 100%;
+  position: relative;
+}
+
+.p-goods__img2::before {
+  padding-top: 29.03%;
+  display: block;
+  content: "";
+}
+
+.p-goods__img2 img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.p-header {
+  background: url(../images/common/bg-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70px;
+  height: 4.375rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.p-header__lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 70px;
+  line-height: 4.375rem;
+}
+
+.p-header__list + .p-header__list {
+  margin-left: 85px;
+  margin-left: 5.3125rem;
+}
+
+.p-header__link {
+  color: #e9604b;
+  font-size: 18px;
+  font-size: 1.125rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.p-header__btn {
+  position: absolute;
+  right: 20px;
+  right: 1.25rem;
+  top: 0;
+  z-index: 10;
+  width: 250px;
+  width: 15.625rem;
+  height: 100px;
+  height: 6.25rem;
+}
+
+.p-mv {
+  background: url(../images/common/mv.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1200px;
+  height: 75rem;
 }
 /*# sourceMappingURL=styles.css.map */

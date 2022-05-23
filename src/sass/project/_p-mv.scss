@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.p-mv {
+  background: url(../images/common/mv.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: rem(1200);
+}

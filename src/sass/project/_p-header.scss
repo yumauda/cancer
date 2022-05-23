@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.p-header {
+  background: url(../images/common/bg-header.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: rem(70);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.p-header__lists {
+  display: flex;
+  align-items: center;
+  line-height: rem(70);
+}
+.p-header__list + .p-header__list {
+  margin-left: rem(85);
+}
+.p-header__link {
+  color: $red;
+  font-size: rem(18);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.p-header__btn {
+  position: absolute;
+  right: rem(20);
+  top: 0;
+  z-index: 10;
+  width: rem(250);
+  height: rem(100);
+}
