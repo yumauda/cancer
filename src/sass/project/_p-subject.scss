@@ -1,0 +1,43 @@
+@use "global" as *;
+
+.p-subject {
+  padding-top: rem(70);
+  padding-bottom: rem(70);
+}
+.p-subject__content {
+  @include mq(md) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.p-subject__text-wrapper {
+  margin-top: rem(30);
+}
+.p-subject__text {
+  font-size: rem(22);
+  line-height: 1.7272;
+  color: #231815;
+}
+.p-subject__img {
+  max-width: rem(515);
+  width: 100%;
+  position: relative;
+  @include mq(md) {
+    margin-left: rem(30);
+  }
+}
+.p-subject__img::before {
+  padding-top: 109.7%;
+  display: block;
+  content: "";
+}
+.p-subject__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

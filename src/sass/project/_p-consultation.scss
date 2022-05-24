@@ -1,0 +1,136 @@
+@use "global" as *;
+
+.p-consultation {
+  padding-top: rem(70);
+  padding-bottom: rem(70);
+  background: $yellow;
+}
+.p-consultation__content {
+  border-radius: rem(15);
+  @include mq(md) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.p-consultation__sns {
+  background: $red;
+  padding-top: rem(48);
+  padding-bottom: rem(70);
+  padding-left: rem(50);
+  padding-right: rem(50);
+  border-radius: rem(15) 0 0 rem(15);
+}
+.p-consultation__description {
+  text-align: center;
+}
+.p-consultation__text {
+  color: $white;
+  font-size: rem(22);
+  line-height: 2.18118;
+}
+.p-consultation__text span {
+  color: $yellow;
+  font-size: rem(30);
+}
+.p-consultation__button {
+  margin-top: rem(54);
+  display: flex;
+  justify-content: space-around;
+}
+.p-consultation__link {
+  width: rem(42);
+  height: rem(42);
+  @include mq(md) {
+    width: rem(84);
+    height: rem(84);
+  }
+}
+.p-consultation__contact {
+  background: $white;
+  padding-top: rem(6);
+  padding-bottom: rem(37);
+  padding-left: rem(24);
+  padding-right: rem(24);
+  position: relative;
+}
+.p-consultation__contact::before {
+  content: "";
+  position: absolute;
+  background: url(../images/common/consultation-icon.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: rem(80);
+  height: rem(80);
+  @include mq(md) {
+    width: rem(157);
+    height: rem(157);
+    right: 0;
+    bottom: -5%;
+  }
+}
+.p-consultation__title {
+  max-width: rem(468);
+  width: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.p-consultation__title::before {
+  padding-top: 25.9%;
+  display: block;
+  content: "";
+}
+.p-consultation__title img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.p-consultation__tel {
+  text-align: center;
+  position: relative;
+}
+.p-consultation__tel::before {
+  content: "";
+  position: absolute;
+  background: url(../images/common/conslutation-tel.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: rem(46);
+  height: rem(40);
+  top: 50%;
+  transform: translateY(-50%);
+  left: 8%;
+}
+.p-consultation__number {
+  font-size: rem(46);
+  color: $red;
+}
+.p-consultation__message {
+  text-align: center;
+}
+.p-consultation__message-text {
+  margin-top: rem(27);
+  font-size: rem(18);
+  line-height: 1.4444;
+  color: #2e2624;
+  text-align: left;
+}
+.p-consultation__time {
+  margin-top: rem(21);
+  background-color: #fff47f;
+  border-radius: rem(15);
+  padding: rem(14) rem(10);
+  display: inline-block;
+}
+.p-consultation__time-text {
+  font-size: rem(16);
+  line-height: 1.375;
+  color: #231815;
+}

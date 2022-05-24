@@ -1,0 +1,32 @@
+@use "global" as *;
+
+.p-information {
+}
+.p-information__wrapper {
+}
+.p-information__row {
+  @include mq(md) {
+    display: flex;
+    margin-top: rem(23);
+  }
+}
+.p-information__time-wrapper {
+  @include mq(md) {
+    width: rem(100);
+  }
+}
+.p-information__time {
+  font-size: rem(17);
+  color: $red;
+}
+.p-information__description-wrapper {
+  @include mq(md) {
+    width: calc(100% - rem(100));
+    margin-left: rem(8);
+  }
+}
+.p-information__description {
+  font-size: rem(17);
+  line-height: 1.4117;
+  color: #2e2624;
+}
