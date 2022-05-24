@@ -41,3 +41,35 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.p-subject__detail {
+  margin-top: rem(66);
+}
+.p-subject__row {
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+    padding-top: rem(24);
+    padding-bottom: rem(24);
+  }
+}
+.p-subject__title {
+  @include mq(md) {
+    width: rem(200);
+  }
+}
+.p-subject__explain {
+  @include mq(md) {
+    width: calc(100% - rem(200));
+    margin-left: rem(40);
+  }
+}
+.p-subject__btn {
+  text-align: center;
+  margin-top: rem(60);
+}
+.p-subject__btn-link {
+  display: inline-block;
+  @include mq(md) {
+    width: rem(382);
+  }
+}

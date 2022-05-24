@@ -1,0 +1,102 @@
+@use "global" as *;
+
+.p-sponsor {
+}
+.p-sponsor__title-wrapper {
+  text-align: left;
+}
+.p-sponsor__title {
+  font-size: rem(22);
+  color: #231815;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+}
+.p-sponsor__content {
+}
+.p-sponsor__row {
+  padding-top: rem(40);
+  padding-bottom: rem(40);
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+  }
+}
+.p-sponsor__img {
+  max-width: rem(320);
+  width: 100%;
+  position: relative;
+}
+.p-sponsor__img::before {
+  padding-top: 68.125%;
+  display: block;
+  content: "";
+}
+.p-sponsor__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.p-sponsor__img--shower {
+  max-width: rem(260);
+  width: 100%;
+  position: relative;
+  margin-left: rem(32);
+}
+.p-sponsor__img--shower::before {
+  padding-top: 100%;
+  display: block;
+  content: "";
+}
+.p-sponsor__img--shower img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.p-sponsor__detail {
+  @include mq(md) {
+    margin-left: rem(44);
+  }
+}
+.p-sponsor__detail--shower {
+  @include mq(md) {
+    margin-left: rem(72);
+  }
+}
+.p-sponsor__img--drink {
+  max-width: rem(75);
+  width: 100%;
+  position: relative;
+  @include mq(md) {
+    margin-left: rem(120);
+  }
+}
+.p-sponsor__img--drink::before {
+  padding-top: 320%;
+  display: block;
+  content: "";
+}
+.p-sponsor__img--drink img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.p-sponsor__detail--drink {
+  @include mq(md) {
+    margin-left: rem(170);
+  }
+}
