@@ -1,7 +1,10 @@
 @use "global" as *;
 
 .c-how-description {
-  font-size: rem(22);
   line-height: 1.3636;
   color: #231815;
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(22);
+  }
 }

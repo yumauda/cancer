@@ -13,6 +13,12 @@
   width: 100%;
   z-index: 9999;
 }
+.p-header__nav {
+  display: none;
+  @include mq(md) {
+    display: block;
+  }
+}
 .p-header__lists {
   display: flex;
   align-items: center;
@@ -28,10 +34,15 @@
   text-transform: uppercase;
 }
 .p-header__btn {
+  display: inline-block;
   position: absolute;
   right: rem(20);
   top: 0;
   z-index: 10;
-  width: rem(250);
-  height: rem(100);
+  width: rem(120);
+  height: auto;
+  @include mq(md) {
+    width: rem(250);
+    height: rem(100);
+  }
 }

@@ -14,28 +14,40 @@
 }
 .p-consultation__sns {
   background: $red;
-  padding-top: rem(48);
-  padding-bottom: rem(70);
-  padding-left: rem(50);
-  padding-right: rem(50);
-  border-radius: rem(15) 0 0 rem(15);
+  padding: rem(16);
+  @include mq(md) {
+    padding-top: rem(48);
+    padding-bottom: rem(70);
+    padding-left: rem(50);
+    padding-right: rem(50);
+    border-radius: rem(15) 0 0 rem(15);
+  }
 }
 .p-consultation__description {
   text-align: center;
 }
 .p-consultation__text {
   color: $white;
-  font-size: rem(22);
   line-height: 2.18118;
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(22);
+  }
 }
 .p-consultation__text span {
   color: $yellow;
-  font-size: rem(30);
+  font-size: rem(20);
+  @include mq(md) {
+    font-size: rem(30);
+  }
 }
 .p-consultation__button {
-  margin-top: rem(54);
   display: flex;
   justify-content: space-around;
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(54);
+  }
 }
 .p-consultation__link {
   width: rem(42);
@@ -47,11 +59,14 @@
 }
 .p-consultation__contact {
   background: $white;
-  padding-top: rem(6);
-  padding-bottom: rem(37);
-  padding-left: rem(24);
-  padding-right: rem(24);
   position: relative;
+  padding: rem(16);
+  @include mq(md) {
+    padding-top: rem(6);
+    padding-bottom: rem(37);
+    padding-left: rem(24);
+    padding-right: rem(24);
+  }
 }
 .p-consultation__contact::before {
   content: "";
@@ -62,6 +77,8 @@
   background-repeat: no-repeat;
   width: rem(80);
   height: rem(80);
+  bottom: -8%;
+  right: 0;
   @include mq(md) {
     width: rem(157);
     height: rem(157);
@@ -106,21 +123,30 @@
   height: rem(40);
   top: 50%;
   transform: translateY(-50%);
-  left: 8%;
+  left: 0;
+  @include mq(md) {
+    left: 8%;
+  }
 }
 .p-consultation__number {
-  font-size: rem(46);
   color: $red;
+  font-size: rem(32);
+  @include mq(md) {
+    font-size: rem(46);
+  }
 }
 .p-consultation__message {
   text-align: center;
 }
 .p-consultation__message-text {
   margin-top: rem(27);
-  font-size: rem(18);
   line-height: 1.4444;
   color: #2e2624;
   text-align: left;
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(18);
+  }
 }
 .p-consultation__time {
   margin-top: rem(21);
@@ -130,7 +156,10 @@
   display: inline-block;
 }
 .p-consultation__time-text {
-  font-size: rem(16);
   line-height: 1.375;
   color: #231815;
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(16);
+  }
 }

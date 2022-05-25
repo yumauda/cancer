@@ -14,16 +14,21 @@
   margin-top: rem(30);
 }
 .p-subject__text {
-  font-size: rem(22);
   line-height: 1.7272;
   color: #231815;
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(22);
+  }
 }
 .p-subject__img {
   max-width: rem(515);
   width: 100%;
   position: relative;
+  margin-top: rem(16);
   @include mq(md) {
     margin-left: rem(30);
+    margin-top: initial;
   }
 }
 .p-subject__img::before {
@@ -71,5 +76,20 @@
   display: inline-block;
   @include mq(md) {
     width: rem(382);
+  }
+}
+.p-subject__pdf {
+  display: inline-block;
+  color: $white;
+  background-color: $red;
+  text-align: center;
+  padding: rem(20) 0;
+  width: 100%;
+  margin-top: rem(16);
+  margin-bottom: rem(16);
+  @include mq(md) {
+    font-size: rem(22);
+    width: rem(320);
+    margin-bottom: initial;
   }
 }

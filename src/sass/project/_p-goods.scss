@@ -7,14 +7,17 @@
 .p-goods__content {
 }
 .p-goods__title {
+  font-size: rem(20);
   color: #ffef00;
   background-color: $red;
   margin: 0 calc(50% - 50vw);
   width: 100vw;
   padding: rem(12) 0;
   text-align: center;
-  font-size: rem(34);
   font-weight: 400;
+  @include mq(md) {
+    font-size: rem(34);
+  }
 }
 .p-goods__img {
   margin-top: rem(48);

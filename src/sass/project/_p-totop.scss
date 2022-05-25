@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.p-totop {
+  position: fixed;
+  bottom: rem(40);
+  right: rem(20);
+}

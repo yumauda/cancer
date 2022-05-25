@@ -1,8 +1,11 @@
 @use "global" as *;
 
 .c-subject-title {
-  font-size: rem(22);
   letter-spacing: 0.2em;
   color: #231815;
   line-height: 1.3636;
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(22);
+  }
 }

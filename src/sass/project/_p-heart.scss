@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.p-heart {
+  padding-top: rem(70);
+  padding-bottom: rem(70);
+}
+.p-heart__content {
+  text-align: center;
+}
+.p-heart__img {
+  max-width: rem(257);
+  width: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.p-heart__img::before {
+  padding-top: 51.361%;
+  display: block;
+  content: "";
+}
+.p-heart__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.p-heart__text {
+  font-size: rem(26);
+  letter-spacing: 0.075em;
+  line-height: 1.5;
+  color: #231815;
+  margin-top: rem(8);
+}
+.p-heart__text--red {
+  color: $red;
+  font-size: rem(38);
+  letter-spacing: 0.075em;
+  margin-top: rem(8);
+}

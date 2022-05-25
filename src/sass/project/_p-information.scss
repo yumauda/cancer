@@ -5,6 +5,7 @@
 .p-information__wrapper {
 }
 .p-information__row {
+  margin-top: rem(16);
   @include mq(md) {
     display: flex;
     margin-top: rem(23);
