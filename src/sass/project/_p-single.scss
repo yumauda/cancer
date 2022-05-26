@@ -1,0 +1,56 @@
+@use "global" as *;
+
+.p-single {
+  padding-top: rem(80);
+  padding-bottom: rem(80);
+  position: relative;
+}
+.p-single::before {
+  content: "";
+  position: absolute;
+  background: url(../images/common/bg-page-mv.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: rem(80);
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.p-single__title {
+  text-align: left;
+}
+.p-single__date-wrapper {
+  font-size: rem(14);
+  color: $red;
+}
+.p-single h2 {
+  font-size: rem(20);
+  font-weight: 400;
+  margin-top: rem(20);
+  padding-bottom: rem(40);
+  color: #2e2624;
+}
+.p-single p {
+  font-size: rem(14);
+  color: #2e2624;
+  line-height: 1.5;
+  padding-top: rem(40);
+}
+.p-single img {
+  max-width: rem(500);
+  width: 100%;
+  margin-top: rem(56);
+  border: 1px solid #ccc;
+}
+.p-single__btn-wrapper {
+  text-align: right;
+  margin-top: rem(120);
+  margin-bottom: rem(64);
+}
+.p-single__btn {
+  display: inline-block;
+  font-size: rem(16);
+  color: $red;
+}
