@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.p-page-mv {
+  background: url(../images/common/bg-page-mv.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: rem(70);
+  padding: rem(40) 0;
+  text-align: center;
+}
+.p-page-mv__title {
+  font-size: rem(24);
+  color: #2e2624;
+  background: $white;
+  display: inline-block;
+  text-align: center;
+  border-radius: rem(20);
+  @include mq(md) {
+    width: rem(720);
+    padding: rem(32) 0;
+  }
+}

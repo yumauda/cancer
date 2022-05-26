@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.p-page-news {
+  padding-top: rem(80);
+  padding-bottom: rem(80);
+  position: relative;
+}
+.p-page-news::before {
+  content: "";
+  position: absolute;
+  background: url(../images/common/bg-page-mv.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: rem(80);
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

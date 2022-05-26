@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.p-home {
+  padding-bottom: rem(80);
+  max-width: rem(920);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.p-home__row {
+  @include mq(md) {
+    display: flex;
+  }
+}
+.p-home__row + .p-home__row {
+  margin-top: rem(40);
+}
+.p-home__title {
+  @include mq(md) {
+    width: rem(200);
+  }
+}
+.p-home__date {
+  font-size: rem(18);
+  color: $red;
+}
+.p-home__description {
+  @include mq(md) {
+    width: calc(100% - rem(250));
+  }
+}
+.p-home__text {
+  font-size: rem(18);
+  color: #231815;
+}

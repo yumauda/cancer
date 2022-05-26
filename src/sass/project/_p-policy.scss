@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.p-policy {
+  padding-top: rem(80);
+  padding-bottom: rem(80);
+  position: relative;
+  @include mq(md) {
+    padding-bottom: rem(200);
+  }
+}
+.p-policy::before {
+  content: "";
+  position: absolute;
+  background: url(../images/common/bg-page-mv.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: rem(80);
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.p-policy__detail + .p-policy__detail {
+  margin-top: rem(24);
+}
+.p-policy__text {
+  margin-top: rem(16);
+}
