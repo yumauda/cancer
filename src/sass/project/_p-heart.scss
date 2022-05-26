@@ -3,6 +3,12 @@
 .p-heart {
   padding-top: rem(70);
   padding-bottom: rem(70);
+  background: url(../images/common/bg-heart.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: 1;
 }
 .p-heart__content {
   text-align: center;

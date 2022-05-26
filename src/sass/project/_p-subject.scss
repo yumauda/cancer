@@ -3,6 +3,10 @@
 .p-subject {
   padding-top: rem(70);
   padding-bottom: rem(70);
+  background: url(../images/common/bg-subject.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .p-subject__content {
   @include mq(md) {

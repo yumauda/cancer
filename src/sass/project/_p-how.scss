@@ -3,7 +3,10 @@
 .p-how {
   padding-top: rem(70);
   padding-bottom: rem(70);
-  background: #c2c2c2;
+  background: url(../images/common/bg-how.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .p-how__content {
   max-width: rem(1047);

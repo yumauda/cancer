@@ -3,7 +3,10 @@
 .p-consultation {
   padding-top: rem(70);
   padding-bottom: rem(70);
-  background: $yellow;
+  background: url(../images/common/bg-consultation.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .p-consultation__content {
   border-radius: rem(15);

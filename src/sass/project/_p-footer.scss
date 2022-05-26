@@ -8,14 +8,19 @@
 .p-footer::before {
   content: "";
   position: absolute;
-  background: url(../images/common/footer-top.png);
+  background: url(../images/common/bg-footer.png);
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
+  top: rem(-76);
+  left: 0;
+  right: 0;
   width: 100%;
+  z-index: 0;
   height: rem(150);
 }
 .p-footer__content {
+  margin-top: rem(-200);
 }
 .p-footer__img {
   max-width: rem(468);
@@ -67,9 +72,15 @@
   margin-top: rem(48);
 }
 .p-footer__bottom {
-  font-size: rem(22);
   letter-spacing: 0.1em;
+  font-size: rem(18);
+  @include mq(md) {
+    font-size: rem(22);
+  }
 }
 .p-footer__small {
-  font-size: rem(18);
+  font-size: rem(12);
+  @include mq(md) {
+    font-size: rem(18);
+  }
 }
