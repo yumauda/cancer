@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.p-contact {
+  padding-top: rem(80);
+  padding-bottom: rem(80);
+}
+.p-contact__content {
+}
+.p-contact__text-wrapper {
+  @include mq(md) {
+    margin-left: rem(32);
+  }
+}
+.p-contact__text {
+  font-size: rem(16);
+  color: #231815;
+}
+.p-contact__form {
+  margin-top: rem(80);
+}

@@ -46,5 +46,11 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $('html,body').animate({ scrollTop: targetY }, time, 'swing');
     return false;
   });
-
+  $("#check").change(function(){
+    if ($("#check").prop("checked")) {
+        $("#other").attr("disabled",false);
+    } else {
+        $("#other").attr("disabled",true);
+    }
+});
 });
