@@ -198,16 +198,24 @@ input[type=address] {
 }
 
 .p-company {
-  padding-top: 70px;
-  padding-top: 4.375rem;
-  padding-bottom: 70px;
-  padding-bottom: 4.375rem;
-  background: url(../images/common/bg-company.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   position: relative;
   z-index: 0;
+  background: #fff;
+  border-radius: 0.9375rem;
+  padding-top: 40px;
+  padding-top: 2.5rem;
+  padding-bottom: 70px;
+  padding-bottom: 4.375rem;
+}
+@media screen and (min-width: 768px) {
+  .p-company {
+    padding-top: 4.375rem;
+    border-radius: none;
+    background: url(../images/common/bg-company.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .p-company__title-wrapper {
@@ -215,12 +223,17 @@ input[type=address] {
 }
 
 .p-company__title {
-  max-width: 360px;
-  max-width: 22.5rem;
   width: 100%;
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  max-width: 250px;
+  max-width: 15.625rem;
+}
+@media screen and (min-width: 768px) {
+  .p-company__title {
+    max-width: 22.5rem;
+  }
 }
 
 .p-company__title::before {
@@ -259,12 +272,19 @@ input[type=address] {
 }
 
 .p-company__subtitle {
-  font-size: 22px;
-  font-size: 1.375rem;
   letter-spacing: 0.2em;
   color: #231815;
   margin-top: 40px;
   margin-top: 2.5rem;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .p-company__subtitle {
+    font-size: 1.375rem;
+    font-weight: 400;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -290,6 +310,17 @@ input[type=address] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.p-company__card + .p-company__card {
+  margin-top: 16px;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-company__card + .p-company__card {
+    margin-top: 0;
+    margin-top: initial;
+  }
 }
 
 .p-company__img1 {
@@ -474,8 +505,8 @@ input[type=address] {
   .p-consultation__sns {
     padding-top: 3rem;
     padding-bottom: 4.375rem;
-    padding-left: 3.125rem;
-    padding-right: 3.125rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     border-radius: 0.9375rem 0 0 0.9375rem;
   }
 }
@@ -547,6 +578,7 @@ input[type=address] {
     padding-bottom: 2.3125rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    border-radius: 0 0.9375rem 0.9375rem 0;
   }
 }
 
@@ -766,6 +798,8 @@ input[type=address] {
 
 .p-footer__lists {
   text-align: center;
+  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 @media screen and (min-width: 768px) {
   .p-footer__lists {
@@ -1174,14 +1208,19 @@ input[type=address] {
 .p-heart {
   padding-top: 70px;
   padding-top: 4.375rem;
-  padding-bottom: 70px;
-  padding-bottom: 4.375rem;
   background: url(../images/common/bg-heart.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
   z-index: 1;
+  padding-bottom: 40px;
+  padding-bottom: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-heart {
+    padding-bottom: 4.375rem;
+  }
 }
 
 .p-heart__content {
@@ -1218,22 +1257,32 @@ input[type=address] {
 }
 
 .p-heart__text {
-  font-size: 26px;
-  font-size: 1.625rem;
   letter-spacing: 0.075em;
   line-height: 1.5;
   color: #231815;
   margin-top: 8px;
   margin-top: 0.5rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-heart__text {
+    font-size: 1.625rem;
+  }
 }
 
 .p-heart__text--red {
   color: #e9604b;
-  font-size: 38px;
-  font-size: 2.375rem;
   letter-spacing: 0.075em;
   margin-top: 8px;
   margin-top: 0.5rem;
+  font-size: 22px;
+  font-size: 1.375rem;
+}
+@media screen and (min-width: 768px) {
+  .p-heart__text--red {
+    font-size: 2.375rem;
+  }
 }
 
 .p-home {
@@ -1284,14 +1333,20 @@ input[type=address] {
 }
 
 .p-how {
-  padding-top: 70px;
-  padding-top: 4.375rem;
-  padding-bottom: 70px;
-  padding-bottom: 4.375rem;
-  background: url(../images/common/bg-how.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: #fff;
+  border-radius: 1.25rem;
+  padding: 16px;
+  padding: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-how {
+    padding-top: 4.375rem;
+    padding-bottom: 4.375rem;
+    background: url(../images/common/bg-how.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .p-how__content {
@@ -1299,6 +1354,8 @@ input[type=address] {
   max-width: 65.4375rem;
   width: 100%;
   border-radius: 1.5625rem;
+  margin-top: 24px;
+  margin-top: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .p-how__content {
@@ -1307,12 +1364,17 @@ input[type=address] {
 }
 
 .p-how__title {
-  max-width: 387px;
-  max-width: 24.1875rem;
   width: 100%;
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  max-width: 250px;
+  max-width: 15.625rem;
+}
+@media screen and (min-width: 768px) {
+  .p-how__title {
+    max-width: 24.1875rem;
+  }
 }
 
 .p-how__title::before {
@@ -1356,6 +1418,10 @@ input[type=address] {
   text-align: center;
   padding-bottom: 32px;
   padding-bottom: 2rem;
+  background-image: linear-gradient(to right, #e9604b 4px, transparent 4px);
+  background-size: 12px 4px;
+  background-repeat: repeat-x;
+  background-position: right bottom;
 }
 
 .p-how__annotation {
@@ -1434,12 +1500,17 @@ input[type=address] {
 }
 
 .p-link__title {
-  max-width: 360px;
-  max-width: 22.5rem;
+  max-width: 250px;
+  max-width: 15.625rem;
   width: 100%;
   position: relative;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .p-link__title {
+    max-width: 22.5rem;
+  }
 }
 
 .p-link__title::before {
@@ -1461,13 +1532,18 @@ input[type=address] {
 }
 
 .p-link__content {
-  background: url(../images/common/company-bg.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
+  background: #fff;
+  border-radius: 1.25rem;
+  padding: 16px;
+  padding: 1rem;
 }
 @media screen and (min-width: 768px) {
   .p-link__content {
+    background: url(../images/common/company-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    border-radius: none;
     padding: 5.125rem 3.25rem;
     margin-top: -4.625rem;
   }
@@ -1479,6 +1555,10 @@ input[type=address] {
 }
 
 .p-link__card {
+  background-image: linear-gradient(to right, #231815 6px, transparent 4px);
+  background-size: 10px 2px;
+  background-repeat: repeat-x;
+  background-position: right bottom;
   padding-top: 28px;
   padding-top: 1.75rem;
   padding-bottom: 28px;
@@ -1492,7 +1572,7 @@ input[type=address] {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 1rem 0;
+    padding: 1.75rem 0;
   }
 }
 
@@ -1527,8 +1607,14 @@ input[type=address] {
           transform: translate(-50%, -50%);
 }
 
+.p-link__detail {
+  margin-top: 8px;
+  margin-top: 0.5rem;
+}
 @media screen and (min-width: 768px) {
   .p-link__detail {
+    margin-top: 0;
+    margin-top: initial;
     margin-left: 3rem;
   }
 }
@@ -1850,14 +1936,24 @@ input[type=address] {
 }
 
 .p-prize {
-  padding-top: 70px;
-  padding-top: 4.375rem;
-  padding-bottom: 70px;
-  padding-bottom: 4.375rem;
-  background: url(../images/common/bg-prize.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: #fff;
+  border-radius: 1.25rem;
+  padding: 16px;
+  padding: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-prize {
+    padding-top: 4.375rem;
+    padding-bottom: 4.375rem;
+    padding-left: 0;
+    padding-left: initial;
+    padding-right: 0;
+    padding-right: initial;
+    background: url(../images/common/bg-prize.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .p-prize__title-wrapper {
@@ -1865,12 +1961,17 @@ input[type=address] {
 }
 
 .p-prize__title {
-  max-width: 360px;
-  max-width: 22.5rem;
   width: 100%;
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  max-width: 250px;
+  max-width: 15.625rem;
+}
+@media screen and (min-width: 768px) {
+  .p-prize__title {
+    max-width: 22.5rem;
+  }
 }
 
 .p-prize__title::before {
@@ -1909,6 +2010,17 @@ input[type=address] {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5.625rem;
+  }
+}
+
+.p-prize__top {
+  margin-top: 16px;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-prize__top {
+    margin-top: 0;
+    margin-top: initial;
   }
 }
 
@@ -2020,11 +2132,21 @@ input[type=address] {
   font-weight: 400;
 }
 
+@media screen and (min-width: 768px) {
+  .p-sponsor__content {
+    margin-top: 2.5rem;
+  }
+}
+
 .p-sponsor__row {
-  padding-top: 40px;
-  padding-top: 2.5rem;
-  padding-bottom: 40px;
-  padding-bottom: 2.5rem;
+  padding-top: 28px;
+  padding-top: 1.75rem;
+  padding-bottom: 28px;
+  padding-bottom: 1.75rem;
+  background-image: linear-gradient(to right, #231815 6px, transparent 4px);
+  background-size: 10px 2px;
+  background-repeat: repeat-x;
+  background-position: right top;
 }
 @media screen and (min-width: 768px) {
   .p-sponsor__row {
@@ -2093,8 +2215,14 @@ input[type=address] {
           transform: translate(-50%, -50%);
 }
 
+.p-sponsor__detail {
+  margin-top: 8px;
+  margin-top: 0.5rem;
+}
 @media screen and (min-width: 768px) {
   .p-sponsor__detail {
+    margin-top: 0;
+    margin-top: initial;
     margin-left: 2.75rem;
   }
 }
@@ -2110,10 +2238,14 @@ input[type=address] {
   max-width: 4.6875rem;
   width: 100%;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .p-sponsor__img--drink {
     margin-left: 7.5rem;
+    margin-right: 0;
+    margin-right: initial;
   }
 }
 
@@ -2152,6 +2284,45 @@ input[type=address] {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
+}
+
+.p-subject::before {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .p-subject::before {
+    display: block;
+    position: absolute;
+    content: "";
+    background: url(../images/common/heart-mark.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 8.75rem;
+    height: 12.5625rem;
+    top: 38%;
+    right: 0.625rem;
+  }
+}
+
+.p-subject::after {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .p-subject::after {
+    display: block;
+    position: absolute;
+    content: "";
+    background: url(../images/common/heart-mark-2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 5.25rem;
+    height: 4.4375rem;
+    bottom: 7%;
+    left: 5%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -2214,11 +2385,23 @@ input[type=address] {
           transform: translate(-50%, -50%);
 }
 
+.p-subject__description {
+  border-bottom: 2px solid #231815;
+}
+
 .p-subject__detail {
   margin-top: 66px;
   margin-top: 4.125rem;
 }
 
+.p-subject__row {
+  margin-top: 16px;
+  margin-top: 1rem;
+  background-image: linear-gradient(to right, #231815 6px, transparent 4px);
+  background-size: 10px 2px;
+  background-repeat: repeat-x;
+  background-position: right bottom;
+}
 @media screen and (min-width: 768px) {
   .p-subject__row {
     display: -webkit-box;
@@ -2229,6 +2412,8 @@ input[type=address] {
             align-items: center;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+    margin-top: 0;
+    margin-top: initial;
   }
 }
 
@@ -2341,16 +2526,26 @@ input[type=address] {
 }
 
 .c-prize-description {
-  font-size: 22px;
-  font-size: 1.375rem;
   line-height: 1.4545;
   color: #231815;
+  font-size: 16px;
+  font-size: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .c-prize-description {
+    font-size: 1.375rem;
+  }
 }
 
 .c-prize-title {
-  font-size: 22px;
-  font-size: 1.375rem;
   color: #e9604b;
+  font-size: 16px;
+  font-size: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .c-prize-title {
+    font-size: 1.375rem;
+  }
 }
 
 .c-subject-text {
@@ -2379,8 +2574,8 @@ input[type=address] {
 
 .c-subject-text--red {
   color: #e9604b;
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 16px;
+  font-size: 1rem;
 }
 @media screen and (min-width: 768px) {
   .c-subject-text--red {

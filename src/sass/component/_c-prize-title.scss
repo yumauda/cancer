@@ -1,6 +1,9 @@
 @use "global" as *;
 
 .c-prize-title {
-  font-size: rem(22);
   color: $red;
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(22);
+  }
 }

@@ -1,29 +1,36 @@
 @use "global" as *;
 
 .p-how {
-  padding-top: rem(70);
-  padding-bottom: rem(70);
-  background: url(../images/common/bg-how.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background: $white;
+  border-radius: rem(20);
+  padding: rem(16);
+  @include mq(md) {
+    padding-top: rem(70);
+    padding-bottom: rem(70);
+    background: url(../images/common/bg-how.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 .p-how__content {
   max-width: rem(1047);
   width: 100%;
   border-radius: rem(25);
+  margin-top: rem(24);
   @include mq(md) {
     margin-top: rem(-40);
   }
 }
 .p-how__title {
-}
-.p-how__title {
-  max-width: rem(387);
   width: 100%;
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  max-width: rem(250);
+  @include mq(md) {
+    max-width: rem(387);
+  }
 }
 .p-how__title::before {
   padding-top: 21.188%;
@@ -57,6 +64,10 @@
 .p-how__description {
   text-align: center;
   padding-bottom: rem(32);
+  background-image : linear-gradient(to right, $red 4px, transparent 4px);
+  background-size: 12px 4px;
+  background-repeat: repeat-x;
+  background-position: right bottom;
 }
 .p-how__annotation {
   margin-top: rem(28);

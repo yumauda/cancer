@@ -2,13 +2,16 @@
 
 .p-heart {
   padding-top: rem(70);
-  padding-bottom: rem(70);
   background: url(../images/common/bg-heart.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
   z-index: 1;
+  padding-bottom: rem(40);
+  @include mq(md) {
+    padding-bottom: rem(70);
+  }
 }
 .p-heart__content {
   text-align: center;
@@ -36,15 +39,21 @@
   transform: translate(-50%, -50%);
 }
 .p-heart__text {
-  font-size: rem(26);
   letter-spacing: 0.075em;
   line-height: 1.5;
   color: #231815;
   margin-top: rem(8);
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(26);
+  }
 }
 .p-heart__text--red {
   color: $red;
-  font-size: rem(38);
   letter-spacing: 0.075em;
   margin-top: rem(8);
+  font-size: rem(22);
+  @include mq(md) {
+    font-size: rem(38);
+  }
 }

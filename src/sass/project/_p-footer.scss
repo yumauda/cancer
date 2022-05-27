@@ -46,6 +46,7 @@
 }
 .p-footer__lists {
   text-align: center;
+  margin-top: rem(40);
   @include mq(md) {
     display: flex;
     align-items: center;
