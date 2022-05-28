@@ -1594,6 +1594,7 @@ input[type=address] {
 .p-information__row {
   margin-top: 16px;
   margin-top: 1rem;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .p-information__row {
@@ -1602,6 +1603,16 @@ input[type=address] {
     display: flex;
     margin-top: 1.4375rem;
   }
+}
+
+.p-information__link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 @media screen and (min-width: 768px) {

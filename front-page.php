@@ -95,44 +95,38 @@
                     <img src="<?php echo get_template_directory_uri() ?>/images/common/news-title.png" alt="新着情報">
                 </h3>
                 <dl class="p-information__wrapper">
-                    <div class="p-information__row">
-                        <dt class="p-information__time-wrapper">
-                            <p class="p-information__time">2023.02.01</p>
-                        </dt>
-                        <dd class="p-information__description-wrapper">
-                            <p class="p-information__description">令和4年度 誘ってがん検診キャンペーンの
-                                応募を少量いたしました。</p>
-                        </dd>
-                    </div>
-                    <div class="p-information__row">
-                        <dt class="p-information__time-wrapper">
-                            <p class="p-information__time">2023.02.01</p>
-                        </dt>
-                        <dd class="p-information__description-wrapper">
-                            <p class="p-information__description">【山口県】「休日・平日夜間がん検診」を実施し
-                                ています！</p>
-                        </dd>
-                    </div>
-                    <div class="p-information__row">
-                        <dt class="p-information__time-wrapper">
-                            <p class="p-information__time">2023.02.01</p>
-                        </dt>
-                        <dd class="p-information__description-wrapper">
-                            <p class="p-information__description">令和4年度 誘ってがん検診キャンペーンの
-                                応募を少量いたしました。</p>
-                        </dd>
-                    </div>
-                    <div class="p-information__row">
-                        <dt class="p-information__time-wrapper">
-                            <p class="p-information__time">2023.02.01</p>
-                        </dt>
-                        <dd class="p-information__description-wrapper">
-                            <p class="p-information__description">キャンペーンサイトを公開しました。</p>
-                        </dd>
-                    </div>
+                    <?php
+                    // パラメータの設定
+                    $args = array(
+                        'posts_per_page' => 5,
+                        'post_status' => 'publish',
+                        'post_type' => 'post',
+                        'orderby' => 'date',
+                    );
+                    // WP_Queryインスタンスの生成
+                    $my_query = new WP_Query($args);
+                    if ($my_query->have_posts()) :
+                        while ($my_query->have_posts()) : $my_query->the_post();
+                    ?>
+                            <div class="p-information__row">
+                                <div class="p-information__time-wrapper">
+                                    <p class="p-information__time"><?php echo get_the_time('Y/n/j')?></p>
+                                </div>
+                                <div class="p-information__description-wrapper">
+                                    <p class="p-information__description">
+                                        <?php echo wp_trim_words(get_the_title(), 20, '...'); ?>
+                                    </p>
+                                </div>
+                                <a href="<?php echo esc_url(get_permalink()); ?>" class="p-information__link"></a>
+                            </div>
+                    <?php
+                        endwhile;
+                    endif;
+                    wp_reset_postdata();
+                    ?>
                 </dl>
                 <div class="p-news__btn-wrapper">
-                    <a href="#" class="p-news__btn">お知らせ一覧&nbsp;▶︎</a>
+                    <a href="<?php echo esc_url(home_url('/news/')); ?>" class="p-news__btn">お知らせ一覧&nbsp;▶︎</a>
                 </div>
             </div>
             <div class="p-news__tweet">

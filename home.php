@@ -9,16 +9,21 @@
 <div class="l-page-news p-page-news">
     <div class="l-inner">
         <div class="p-page-news__content p-home">
-            <div class="p-home__row">
-                <div class="p-home__title">
-                    <p class="p-home__date">2023.02.01</p>
-                </div>
-                <div class="p-home__description">
-                    <p class="p-home__text">令和4年度 誘ってがん検診キャンペーンの応募を少量いたしました。</p>
-                </div>
-                <a href="<?php echo esc_url(get_permalink()); ?>" class="p-home__link"></a>
-            </div>
-            <div class="p-home__row">
+            <?php if (have_posts()) : ?>
+                <?php while (have_posts()) : ?>
+                    <?php the_post(); ?>
+                    <div class="p-home__row">
+                        <div class="p-home__title">
+                            <p class="p-home__date"><?php echo get_the_time('Y/n/j')?></p>
+                        </div>
+                        <div class="p-home__description">
+                            <p class="p-home__text"><?php echo wp_trim_words(get_the_title(), 20, '...'); ?></p>
+                        </div>
+                        <a href="<?php echo esc_url(get_permalink()); ?>" class="p-home__link"></a>
+                    </div>
+                <?php endwhile; ?>
+            <?php endif; ?>
+            <!-- <div class="p-home__row">
                 <div class="p-home__title">
                     <p class="p-home__date">2023.02.01</p>
                 </div>
@@ -44,7 +49,7 @@
                     <p class="p-home__text">キャンペーンサイトを公開しました。</p>
                 </div>
                 <a href="#" class="p-home__link"></a>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
