@@ -9,10 +9,10 @@
         <div class="p-goods__content">
             <h1 class="p-goods__title">"初めて受診する方"と<br class="u-mobile">ペアでがん検診を受ると<br class="u-mobile">山口県グッズが当たる！</h1>
             <figure class="p-goods__img">
-                <img src="./images/common/goods-img.png" alt="県知事賞と健康福祉部長賞">
+                <img src="<?php echo get_template_directory_uri() ?>/images/common/goods-img.png" alt="県知事賞と健康福祉部長賞">
             </figure>
             <figure class="p-goods__img2">
-                <img src="./images/common/goods-only.png" alt="わかば・ピンクリボン賞">
+                <img src="<?php echo get_template_directory_uri() ?>/images/common/goods-only.png" alt="わかば・ピンクリボン賞">
             </figure>
         </div>
     </div>
@@ -21,7 +21,7 @@
     <div class="l-inner">
         <div class="p-how__title-wrapper">
             <h2 class="p-how__title">
-                <img src="./images/common/how-title.png" alt="応募方法">
+                <img src="<?php echo get_template_directory_uri() ?>/images/common/how-title.png" alt="応募方法">
             </h2>
         </div>
         <div class="p-how__content">
@@ -36,8 +36,8 @@
                 </div>
             </div>
             <div class="p-how__btn">
-                <a href="#" class="p-how__link">
-                    <img src="./images/common/how-btn.png" alt="応募はこちらから">
+                <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="p-how__link">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/common/how-btn.png" alt="応募はこちらから">
                 </a>
             </div>
         </div>
@@ -56,19 +56,19 @@
                 </div>
                 <div class="p-consultation__button">
                     <a href="#" class="p-consultation__link">
-                        <img src="./images/common/twitter.svg" alt="ツイッター">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/common/twitter.svg" alt="ツイッター">
                     </a>
                     <a href="#" class="p-consultation__link">
-                        <img src="./images/common/line.svg" alt="ライン">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/common/line.svg" alt="ライン">
                     </a>
                     <a href="#" class="p-consultation__link">
-                        <img src="./images/common/instagram.svg" alt="インスタグラム">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/common/instagram.svg" alt="インスタグラム">
                     </a>
                 </div>
             </div>
             <div class="p-consultation__contact">
                 <h3 class="p-consultation__title">
-                    <img src="./images/common/consultation-title.png" alt="山口県がん総合相談窓口">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/common/consultation-title.png" alt="山口県がん総合相談窓口">
                 </h3>
                 <div class="p-consultation__tel">
                     <p class="p-consultation__number">0835-28-7090</p>
@@ -92,7 +92,7 @@
         <div class="p-news__content">
             <div class="p-news__information p-information">
                 <h3 class="p-news__title p-information__top-title">
-                    <img src="./images/common/news-title.png" alt="新着情報">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/common/news-title.png" alt="新着情報">
                 </h3>
                 <dl class="p-information__wrapper">
                     <div class="p-information__row">
@@ -140,7 +140,7 @@
 
                 </div>
                 <figure class="p-news__img">
-                    <img src="./images/common/news-img.png" alt="twitterニュース画像">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/common/news-img.png" alt="twitterニュース画像">
                 </figure>
             </div>
         </div>
@@ -151,7 +151,7 @@
         <div class="p-subject__content">
             <div class="p-subject__description">
                 <h3 class="p-subject__main-title">
-                    <img src="./images/common/subject-title.png" alt="応募対象">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/common/subject-title.png" alt="応募対象">
                 </h3>
                 <div class="p-subject__text-wrapper">
                     <p class="p-subject__text">“初めて”がん検診（胃がん、肺がん、大腸がん、乳がん、子宮頸がん）を受診した方を含む、20歳以上の山口県内に居住する2名1組で応募できます。（受診日時、機関は別々でもかまいません）<br>
@@ -160,7 +160,7 @@
                 </div>
             </div>
             <figure class="p-subject__img">
-                <img src="./images/common/subject-img.png" alt="対象検査の図">
+                <img src="<?php echo get_template_directory_uri() ?>/images/common/subject-img.png" alt="対象検査の図">
             </figure>
         </div>
         <dl class="p-subject__detail">
@@ -227,7 +227,7 @@
                         （9：00～18：00&nbsp;&nbsp;土・日・祝日・年末年始を除く）</p>
                     <p class="c-subject-text--smallRed">【よくある質問について】</p>
                     <p class="c-subject-text--other">キャンペーンや検診についてよくいただく質問をまとめています。</p>
-                    <a href="./faq.pdf" class="p-subject__pdf" target="_blank" rel="noopener noreferrer">Q＆A&nbsp;ダウンロード（PDF）</a>
+                    <a href="<?php echo esc_url(home_url('/faq.pdf/')); ?>" class="p-subject__pdf" target="_blank" rel="noopener noreferrer">Q＆A&nbsp;ダウンロード（PDF）</a>
                 </dd>
             </div>
             <div class="p-subject__row">
@@ -242,8 +242,8 @@
             </div>
         </dl>
         <div class="p-subject__btn">
-            <a href="#" class="p-subject__btn-link">
-                <img src="./images/common/how-btn.png" alt="応募はこちらから">
+            <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="p-subject__btn-link">
+                <img src="<?php echo get_template_directory_uri() ?>/images/common/how-btn.png" alt="応募はこちらから">
             </a>
         </div>
     </div>
@@ -252,14 +252,14 @@
     <div class="l-inner">
         <div class="p-prize__title-wrapper">
             <h3 class="p-prize__title">
-                <img src="./images/common/prize-title.png" alt="景品一覧">
+                <img src="<?php echo get_template_directory_uri() ?>/images/common/prize-title.png" alt="景品一覧">
             </h3>
         </div>
         <div class="p-prize__content">
             <ul class="p-prize__tops">
                 <li class="p-prize__top">
                     <figure class="p-prize__top-img">
-                        <img src="./images/common/prize-img1.png" alt="県知事賞">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/common/prize-img1.png" alt="県知事賞">
                     </figure>
                     <div class="p-prize__detail">
                         <div class="p-prize__detail-title">
@@ -272,7 +272,7 @@
                 </li>
                 <li class="p-prize__top">
                     <figure class="p-prize__top-img">
-                        <img src="./images/common/prize-img2.png" alt="健康福祉部長賞">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/common/prize-img2.png" alt="健康福祉部長賞">
                     </figure>
                     <div class="p-prize__detail p-prize__detail--second">
                         <div class="p-prize__detail-title">
@@ -291,7 +291,7 @@
                 <div class="p-sponsor__content">
                     <div class="p-sponsor__row">
                         <figure class="p-sponsor__img">
-                            <img src="./images/common/prize-img3.png" alt="電子体温計けんおんくん">
+                            <img src="<?php echo get_template_directory_uri() ?>/images/common/prize-img3.png" alt="電子体温計けんおんくん">
                         </figure>
                         <div class="p-sponsor__detail">
                             <div class="p-sponsor__detail-title">
@@ -306,7 +306,7 @@
                     </div>
                     <div class="p-sponsor__row">
                         <figure class="p-sponsor__img">
-                            <img src="./images/common/prize-img4.png" alt="フォームローラー">
+                            <img src="<?php echo get_template_directory_uri() ?>/images/common/prize-img4.png" alt="フォームローラー">
                         </figure>
                         <div class="p-sponsor__detail">
                             <div class="p-sponsor__detail-title">
@@ -321,7 +321,7 @@
                     </div>
                     <div class="p-sponsor__row">
                         <figure class="p-sponsor__img">
-                            <img src="./images/common/prize-img5.png" alt="タニタ ヘルスメーター">
+                            <img src="<?php echo get_template_directory_uri() ?>/images/common/prize-img5.png" alt="タニタ ヘルスメーター">
                         </figure>
                         <div class="p-sponsor__detail">
                             <div class="p-sponsor__detail-title">
@@ -336,7 +336,7 @@
                     </div>
                     <div class="p-sponsor__row">
                         <figure class="p-sponsor__img">
-                            <img src="./images/common/prize-img6.png" alt="丸久商品券">
+                            <img src="<?php echo get_template_directory_uri() ?>/images/common/prize-img6.png" alt="丸久商品券">
                         </figure>
                         <div class="p-sponsor__detail">
                             <div class="p-sponsor__detail-title">
@@ -351,7 +351,7 @@
                     </div>
                     <div class="p-sponsor__row">
                         <figure class="p-sponsor__img p-sponsor__img--shower">
-                            <img src="./images/common/prize-img7.png" alt="シャワーヘッド">
+                            <img src="<?php echo get_template_directory_uri() ?>/images/common/prize-img7.png" alt="シャワーヘッド">
                         </figure>
                         <div class="p-sponsor__detail p-sponsor__detail--shower">
                             <div class="p-sponsor__detail-title">
@@ -366,7 +366,7 @@
                     </div>
                     <div class="p-sponsor__row">
                         <figure class="p-sponsor__img">
-                            <img src="./images/common/prize-img8.png" alt="ゆめタウン・ゆめマート商品券">
+                            <img src="<?php echo get_template_directory_uri() ?>/images/common/prize-img8.png" alt="ゆめタウン・ゆめマート商品券">
                         </figure>
                         <div class="p-sponsor__detail">
                             <div class="p-sponsor__detail-title">
@@ -381,7 +381,7 @@
                     </div>
                     <div class="p-sponsor__row">
                         <figure class="p-sponsor__img--drink">
-                            <img src="./images/common/prize-img9.png" alt="ボディメンテドリンク">
+                            <img src="<?php echo get_template_directory_uri() ?>/images/common/prize-img9.png" alt="ボディメンテドリンク">
                         </figure>
                         <div class="p-sponsor__detail p-sponsor__detail--drink">
                             <div class="p-sponsor__detail-title">
@@ -396,7 +396,7 @@
                     </div>
                     <div class="p-sponsor__row">
                         <figure class="p-sponsor__img">
-                            <img src="./images/common/prize-img10.png" alt="骨盤ベルト">
+                            <img src="<?php echo get_template_directory_uri() ?>/images/common/prize-img10.png" alt="骨盤ベルト">
                         </figure>
                         <div class="p-sponsor__detail">
                             <div class="p-sponsor__detail-title">
@@ -411,7 +411,7 @@
                     </div>
                     <div class="p-sponsor__row">
                         <figure class="p-sponsor__img">
-                            <img src="./images/common/prize-img4.png" alt="レノファ山口観戦チケット">
+                            <img src="<?php echo get_template_directory_uri() ?>/images/common/prize-img4.png" alt="レノファ山口観戦チケット">
                         </figure>
                         <div class="p-sponsor__detail">
                             <div class="p-sponsor__detail-title">
@@ -433,7 +433,7 @@
     <div class="l-inner">
         <div class="p-heart__content">
             <figure class="p-heart__img">
-                <img src="./images/common/heart-logo.png" alt="健康なうちに定期的に検診を受けることが大切です">
+                <img src="<?php echo get_template_directory_uri() ?>/images/common/heart-logo.png" alt="健康なうちに定期的に検診を受けることが大切です">
             </figure>
             <p class="p-heart__text">早期のがんは自覚症状がほとんどありません。<br>
                 早期発見するためには、症状のない</p>
@@ -445,7 +445,7 @@
     <div class="l-inner">
         <div class="p-company__title-wrapper">
             <h3 class="p-company__title">
-                <img src="./images/common/company-title.png" alt="景品一覧">
+                <img src="<?php echo get_template_directory_uri() ?>/images/common/company-title.png" alt="景品一覧">
             </h3>
         </div>
         <div class="p-company__content">
@@ -456,31 +456,31 @@
                 <ul class="p-company__cards">
                     <li class="p-company__card">
                         <figure class="p-company__img1">
-                            <img src="./images/common/company-img1.png" alt="株式会社山口銀行">
+                            <img src="<?php echo get_template_directory_uri() ?>/images/common/company-img1.png" alt="株式会社山口銀行">
                         </figure>
                         <p class="p-company__name">株式会社山口銀行</p>
                     </li>
                     <li class="p-company__card">
                         <figure class="p-company__img2">
-                            <img src="./images/common/company-img2.png" alt="アフラック">
+                            <img src="<?php echo get_template_directory_uri() ?>/images/common/company-img2.png" alt="アフラック">
                         </figure>
                         <p class="p-company__name">アフラック</p>
                     </li>
                     <li class="p-company__card">
                         <figure class="p-company__img3">
-                            <img src="./images/common/company-img3.png" alt="東京海上日動火災保険株式会社">
+                            <img src="<?php echo get_template_directory_uri() ?>/images/common/company-img3.png" alt="東京海上日動火災保険株式会社">
                         </figure>
                         <p class="p-company__name">東京海上日動火災保険株式会社</p>
                     </li>
                     <li class="p-company__card">
                         <figure class="p-company__img4">
-                            <img src="./images/common/company-img4.png" alt="株式会社丸久">
+                            <img src="<?php echo get_template_directory_uri() ?>/images/common/company-img4.png" alt="株式会社丸久">
                         </figure>
                         <p class="p-company__name">株式会社丸久</p>
                     </li>
                     <li class="p-company__card">
                         <figure class="p-company__img5">
-                            <img src="./images/common/company-img5.png" alt="第一生命保険株式会社">
+                            <img src="<?php echo get_template_directory_uri() ?>/images/common/company-img5.png" alt="第一生命保険株式会社">
                         </figure>
                         <p class="p-company__name">第一生命保険株式会社</p>
                     </li>
@@ -493,19 +493,19 @@
                 <ul class="p-company__cards">
                     <li class="p-company__card">
                         <figure class="p-company__img5">
-                            <img src="./images/common/company-img6.png" alt="株式会社イズミ">
+                            <img src="<?php echo get_template_directory_uri() ?>/images/common/company-img6.png" alt="株式会社イズミ">
                         </figure>
                         <p class="p-company__name">株式会社イズミ</p>
                     </li>
                     <li class="p-company__card">
                         <figure class="p-company__img5">
-                            <img src="./images/common/company-img7.png" alt="大塚製薬株式会社">
+                            <img src="<?php echo get_template_directory_uri() ?>/images/common/company-img7.png" alt="大塚製薬株式会社">
                         </figure>
                         <p class="p-company__name">大塚製薬株式会社</p>
                     </li>
                     <li class="p-company__card">
                         <figure class="p-company__img5">
-                            <img src="./images/common/company-img8.png" alt="ミズノ株式会社">
+                            <img src="<?php echo get_template_directory_uri() ?>/images/common/company-img8.png" alt="ミズノ株式会社">
                         </figure>
                         <p class="p-company__name">ミズノ株式会社</p>
                     </li>
@@ -524,14 +524,14 @@
     <div class="l-inner">
         <div class="p-link__title-wrapper">
             <h3 class="p-link__title">
-                <img src="./images/common/link-title.png" alt="リンク集">
+                <img src="<?php echo get_template_directory_uri() ?>/images/common/link-title.png" alt="リンク集">
             </h3>
         </div>
         <div class="p-link__content">
             <ul class="p-link__cards">
                 <li class="p-link__card">
                     <figure class="p-link__img">
-                        <img src="./images/common/link-img.png" alt="リンク画像">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/common/link-img.png" alt="リンク画像">
                     </figure>
                     <div class="p-link__detail">
                         <a href="https://www.pref.yamaguchi.lg.jp/soshiki/45/14401.html" class="p-link__link" target="_blank" rel="noopener noreferrer">休日・平日夜間がん検診</a>
@@ -540,7 +540,7 @@
                 </li>
                 <li class="p-link__card">
                     <figure class="p-link__img">
-                        <img src="./images/common/link-img.png" alt="リンク画像">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/common/link-img.png" alt="リンク画像">
                     </figure>
                     <div class="p-link__detail">
                         <a href="https://www.pref.yamaguchi.lg.jp/soshiki/45/14402.html" class="p-link__link" target="_blank" rel="noopener noreferrer">「がん」は自分に関係ないと思っていませんか…</a>
@@ -549,7 +549,7 @@
                 </li>
                 <li class="p-link__card">
                     <figure class="p-link__img">
-                        <img src="./images/common/link-img.png" alt="リンク画像">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/common/link-img.png" alt="リンク画像">
                     </figure>
                     <div class="p-link__detail">
                         <a href="https://www.pref.yamaguchi.lg.jp/uploaded/attachment/25736.pdf" class="p-link__link" target="_blank" rel="noopener noreferrer">がん検診早期発見事例集（PDF：9.3MB）</a>
@@ -558,7 +558,7 @@
                 </li>
                 <li class="p-link__card">
                     <figure class="p-link__img">
-                        <img src="./images/common/link-img.png" alt="リンク画像">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/common/link-img.png" alt="リンク画像">
                     </figure>
                     <div class="p-link__detail">
                         <a href="https://www.pref.yamaguchi.lg.jp/soshiki/45/14369.html" class="p-link__link" target="_blank" rel="noopener noreferrer">がん検診に関するお問い合わせ窓口</a>
@@ -567,7 +567,7 @@
                 </li>
                 <li class="p-link__card">
                     <figure class="p-link__img">
-                        <img src="./images/common/link-img.png" alt="リンク画像">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/common/link-img.png" alt="リンク画像">
                     </figure>
                     <div class="p-link__detail">
                         <a href="" class="p-link__link">ページ名が入ります。</a>

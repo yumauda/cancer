@@ -17,14 +17,6 @@
   <meta property="og:description" content="" />
   <!-- ファビコン -->
   <link rel="”icon”" href="./favicon.ico" />
-  <!-- css -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/styles.css">
-  <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script defer src="./js/script.js"></script>
   <?php wp_head();?>
 </head>
 <body>
@@ -51,27 +43,27 @@
       <nav class="p-header__nav">
         <ul class="p-header__lists">
           <li class="p-header__list">
-            <a href="#" class="p-header__link">top</a>
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="p-header__link">top</a>
           </li>
           <li class="p-header__list">
-            <a href="#subject" class="p-header__link">概要</a>
+            <a href="<?php echo esc_url(home_url('/#subject')); ?>" class="p-header__link">概要</a>
           </li>
           <li class="p-header__list">
-            <a href="#" class="p-header__link">新着情報</a>
+            <a href="<?php echo esc_url(home_url('/news/')); ?>" class="p-header__link">新着情報</a>
           </li>
           <li class="p-header__list">
-            <a href="#prize" class="p-header__link">景品一覧</a>
+            <a href="<?php echo esc_url(home_url('/#prize')); ?>" class="p-header__link">景品一覧</a>
           </li>
           <li class="p-header__list">
-            <a href="#link" class="p-header__link">リンク集</a>
+            <a href="<?php echo esc_url(home_url('/#link')); ?>" class="p-header__link">リンク集</a>
           </li>
           <li class="p-header__list">
-            <a href="#" class="p-header__link">サイトポリシー</a>
+            <a href="<?php echo esc_url(home_url('/policy/')); ?>" class="p-header__link">サイトポリシー</a>
           </li>
         </ul>
       </nav>
     </div>
-    <a href="#" class="p-header__btn">
-      <img src="./images/common/btn-header.png" alt="応募する">
+    <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-header__btn">
+      <img src="<?php echo get_template_directory_uri() ?>/images/common/btn-header.png" alt="応募する">
     </a>
   </header>

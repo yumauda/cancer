@@ -33,7 +33,7 @@
 </footer>
 <div class="p-totop">
     <a href="#" class="c-totop">
-        <img src="./images/common/to-top.png" alt="topへ戻る">
+        <img src="<?php echo get_template_directory_uri() ?>/images/common/to-top.png" alt="topへ戻る">
     </a>
 </div>
 </body>
