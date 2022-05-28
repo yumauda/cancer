@@ -32,6 +32,12 @@
   max-width: rem(320);
   width: 100%;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  @include mq(md) {
+    margin-left: initial;
+    margin-right: initial;
+  }
 }
 .p-sponsor__img::before {
   padding-top: 68.125%;
@@ -52,7 +58,12 @@
   max-width: rem(260);
   width: 100%;
   position: relative;
-  margin-left: rem(32);
+  margin-left: auto;
+  margin-right: auto;
+  @include mq(md) {
+    margin-left: rem(32);
+    margin-right: initial;
+  }
 }
 .p-sponsor__img--shower::before {
   padding-top: 100%;

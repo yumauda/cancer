@@ -3,7 +3,7 @@
 .p-prize {
   background: $white;
   border-radius: rem(20);
-  padding: rem(16);
+  padding: rem(32) rem(16);
   @include mq(md) {
     padding-top: rem(70);
     padding-bottom: rem(70);

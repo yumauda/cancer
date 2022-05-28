@@ -28,6 +28,7 @@
 }
 .p-page-footer__lists {
   text-align: center;
+  margin-top: rem(32);
   @include mq(md) {
     display: flex;
     align-items: center;

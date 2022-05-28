@@ -18,6 +18,8 @@
 .p-consultation__sns {
   background: $red;
   padding: rem(16);
+  border-radius: rem(15) rem(15) 0 0;
+
   @include mq(md) {
     padding-top: rem(48);
     padding-bottom: rem(70);
@@ -64,13 +66,13 @@
   background: $white;
   position: relative;
   padding: rem(16);
+  border-radius: 0 0 rem(15) rem(15);
   @include mq(md) {
     padding-top: rem(6);
     padding-bottom: rem(37);
     padding-left: rem(24);
     padding-right: rem(24);
     border-radius: 0 rem(15) rem(15) 0;
-
   }
 }
 .p-consultation__contact::before {

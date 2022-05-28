@@ -79,6 +79,7 @@
 }
 .p-how__link {
   display: inline-block;
+  width: rem(300);
   @include mq(md) {
     width: rem(382);
   }

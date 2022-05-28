@@ -1,9 +1,12 @@
 @use "global" as *;
 
 .p-single {
-  padding-top: rem(80);
+  padding-top: rem(56);
   padding-bottom: rem(80);
   position: relative;
+  @include mq(md) {
+    padding-top: rem(80);
+  }
 }
 .p-single::before {
   content: "";
@@ -29,14 +32,20 @@
   font-size: rem(20);
   font-weight: 400;
   margin-top: rem(20);
-  padding-bottom: rem(40);
   color: #2e2624;
+  padding-bottom: rem(16);
+  @include mq(md) {
+    padding-bottom: rem(40);
+  }
 }
 .p-single p {
   font-size: rem(14);
   color: #2e2624;
   line-height: 1.5;
-  padding-top: rem(40);
+  padding-top: rem(16);
+  @include mq(md) {
+    padding-top: rem(40);
+  }
 }
 .p-single img {
   max-width: rem(500);
@@ -46,8 +55,12 @@
 }
 .p-single__btn-wrapper {
   text-align: right;
-  margin-top: rem(120);
-  margin-bottom: rem(64);
+  margin-top: rem(48);
+  margin-bottom: rem(48);
+  @include mq(md) {
+    margin-top: rem(120);
+    margin-bottom: rem(64);
+  }
 }
 .p-single__btn {
   display: inline-block;

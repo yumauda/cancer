@@ -21,6 +21,12 @@
   left: 0;
   right: 0;
 }
+.p-policy__content {
+  padding-bottom: rem(24);
+  @include mq(md) {
+    padding-bottom: initial;
+  }
+}
 .p-policy__detail + .p-policy__detail {
   margin-top: rem(24);
 }

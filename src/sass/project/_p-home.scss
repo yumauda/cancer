@@ -8,6 +8,7 @@
   margin-right: auto;
 }
 .p-home__row {
+  position: relative;
   @include mq(md) {
     display: flex;
   }
@@ -32,4 +33,15 @@
 .p-home__text {
   font-size: rem(18);
   color: #231815;
+}
+.p-home__link {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
 }

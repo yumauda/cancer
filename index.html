@@ -16,7 +16,7 @@
   <meta property="og:site_name" content="" />
   <meta property="og:description" content="" />
   <!-- ファビコン -->
-  <link rel="”icon”" href="" />
+  <link rel="”icon”" href="./favicon.ico" />
   <!-- css -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,19 +29,37 @@
 <body>
   <header class="l-header p-header">
     <div class="l-inner">
+      <button class="p-header__drawer p-drawer-icon">
+        <span class="p-drawer-icon__bars">
+          <span class="p-drawer-icon__bar1"></span>
+          <span class="p-drawer-icon__bar2"></span>
+          <span class="p-drawer-icon__bar3"></span>
+        </span>
+      </button>
+      <div class="p-header__drawer-content p-drawer-content">
+        <div class="p-drawer-content__items" id="menu">
+          <div class="p-drawer-content__item"><a href="#">TOP</a></div>
+          <div class="p-drawer-content__item"><a href="#subject">概要</a></div>
+          <div class="p-drawer-content__item"><a href="#">新着情報</a></div>
+          <div class="p-drawer-content__item"><a href="#prize">景品一覧</a></div>
+          <div class="p-drawer-content__item"><a href="#link">リンク集</a></div>
+          <div class="p-drawer-content__item"><a href="#">サイトポリシー</a></div>
+        </div>
+      </div>
+      <div class="p-header__drawer-background p-drawer-background"></div>
       <nav class="p-header__nav">
         <ul class="p-header__lists">
           <li class="p-header__list">
             <a href="#" class="p-header__link">top</a>
           </li>
           <li class="p-header__list">
-            <a href="#" class="p-header__link">概要</a>
+            <a href="#subject" class="p-header__link">概要</a>
           </li>
           <li class="p-header__list">
             <a href="#" class="p-header__link">新着情報</a>
           </li>
           <li class="p-header__list">
-            <a href="#" class="p-header__link">景品一覧</a>
+            <a href="#prize" class="p-header__link">景品一覧</a>
           </li>
           <li class="p-header__list">
             <a href="#link" class="p-header__link">リンク集</a>
@@ -56,11 +74,11 @@
       <img src="./images/common/btn-header.png" alt="応募する">
     </a>
   </header>
-  <section class="l-mv p-mv">
+  <div class="l-mv p-mv">
     <div class="l-inner">
 
     </div>
-  </section>
+  </div>
   <section class="l-goods p-goods">
     <div class="l-inner">
       <div class="p-goods__content">
@@ -203,7 +221,7 @@
       </div>
     </div>
   </section>
-  <section class="l-subject p-subject">
+  <section class="l-subject p-subject" id="subject">
     <div class="l-inner">
       <div class="p-subject__content">
         <div class="p-subject__description">
@@ -305,7 +323,7 @@
       </div>
     </div>
   </section>
-  <section class="l-prize p-prize">
+  <section class="l-prize p-prize" id="prize">
     <div class="l-inner">
       <div class="p-prize__title-wrapper">
         <h3 class="p-prize__title">
@@ -486,7 +504,7 @@
       </div>
     </div>
   </section>
-  <section class="l-heart p-heart">
+  <div class="l-heart p-heart">
     <div class="l-inner">
       <div class="p-heart__content">
         <figure class="p-heart__img">
@@ -497,7 +515,7 @@
         <p class="p-heart__text--red">健康なうちに<br class="u-mobile">定期的に検診を受けることが<br class="u-mobile">大切です！</p>
       </div>
     </div>
-  </section>
+  </div>
   <section class="l-company p-company">
     <div class="l-inner">
       <div class="p-company__title-wrapper">

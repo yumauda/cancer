@@ -1,0 +1,90 @@
+@use "global" as *;
+
+.p-drawer-icon {
+  position: fixed;
+  top: rem(20);
+  left: rem(20);
+  z-index: 10001;
+  display: block;
+  @include mq(md) {
+    display: none;
+  }
+}
+.p-drawer-icon.is-active {
+  .p-drawer-icon__bar1 {
+    transform: rotate(-45deg);
+    top: rem(16);
+    background: $white;
+  }
+  .p-drawer-icon__bar2 {
+    display: none;
+  }
+  .p-drawer-icon__bar3 {
+    transform: rotate(45deg);
+    top: rem(16);
+    background: $white;
+  }
+}
+.p-drawer-icon__bars {
+  width: rem(22);
+  height: rem(20);
+  display: block;
+  position: relative;
+}
+.p-drawer-icon__bar1,
+.p-drawer-icon__bar2,
+.p-drawer-icon__bar3 {
+  position: absolute;
+  width: rem(30);
+  height: rem(2);
+  background: #333;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease 0s;
+}
+.p-drawer-icon__bar1 {
+  top: 0;
+}
+.p-drawer-icon__bar2 {
+  top: rem(8);
+}
+.p-drawer-icon__bar3 {
+  top: rem(16);
+}
+.p-drawer-content {
+  width: rem(200);
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: #fff;
+  z-index: 10000;
+  transform: translateX(105%);
+  transition: transform 0.5s ease 0s;
+  padding-top: rem(35);
+}
+.p-drawer-content.is-active {
+  transform: translateX(0);
+}
+.p-drawer-content__items {
+}
+.p-drawer-content__item {
+}
+.p-drawer-content__item a {
+  display: block;
+  padding: rem(10) rem(20);
+  text-transform: capitalize;
+}
+.p-drawer-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba($color: #000000, $alpha: 0.7);
+  z-index: 9999;
+  display: none;
+}
+.p-drawer-background.is-active {
+  display: block;
+}

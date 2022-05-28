@@ -23,14 +23,19 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
-  //ドロワーメニュー
-  $("#MenuButton").click(function () {
-    // $(".l-drawer-menu").toggleClass("is-show");
-    // $(".p-drawer-menu").toggleClass("is-show");
-    $(".js-drawer-open").toggleClass("open");
-    $(".drawer-menu").toggleClass("open");
-    $("html").toggleClass("is-fixed");
-
+  jQuery('.p-drawer-icon').on('click',function(e){
+    e.preventDefault();
+    jQuery('.p-drawer-icon').toggleClass('is-active');
+    jQuery('.p-drawer-content').toggleClass('is-active');
+    jQuery('.p-drawer-background').toggleClass('is-active');
+    return false;
+  });
+  jQuery('.p-drawer-background').on('click',function(e){
+    e.preventDefault();
+    jQuery('.p-drawer-icon').toggleClass('is-active');
+    jQuery('.p-drawer-content').toggleClass('is-active');
+    jQuery('.p-drawer-background').toggleClass('is-active');
+    return false;
   });
 
 
@@ -38,14 +43,15 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
 
   $(document).on('click', 'a[href*="#"]', function () {
-    let time = 400;
-    let header = $('header').innerHeight();
+    
+    let header = $('.p-header').innerHeight();
     let target = $(this.hash);
     if (!target.length) return;
     let targetY = target.offset().top - header;
     $('html,body').animate({ scrollTop: targetY }, time, 'swing');
     return false;
   });
+  $('#menu a[href]').on('click', function (event) { $('.p-drawer-icon').trigger('click') })
   $("#check").change(function(){
     if ($("#check").prop("checked")) {
         $("#other").attr("disabled",false);
