@@ -867,6 +867,8 @@ input[type=address] {
 }
 
 .p-footer {
+  margin-top: 70px;
+  margin-top: 4.375rem;
   padding-top: 70px;
   padding-top: 4.375rem;
   padding-bottom: 70px;
