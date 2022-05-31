@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -17,8 +18,9 @@
   <meta property="og:description" content="" />
   <!-- ファビコン -->
   <link rel="”icon”" href="./favicon.ico" />
-  <?php wp_head();?>
+  <?php wp_head(); ?>
 </head>
+
 <body>
   <header class="l-header p-header">
     <div class="l-inner">
@@ -31,12 +33,13 @@
       </button>
       <div class="p-header__drawer-content p-drawer-content">
         <div class="p-drawer-content__items" id="menu">
-          <div class="p-drawer-content__item"><a href="#">TOP</a></div>
-          <div class="p-drawer-content__item"><a href="#subject">概要</a></div>
-          <div class="p-drawer-content__item"><a href="#">新着情報</a></div>
-          <div class="p-drawer-content__item"><a href="#prize">景品一覧</a></div>
-          <div class="p-drawer-content__item"><a href="#link">リンク集</a></div>
-          <div class="p-drawer-content__item"><a href="#">サイトポリシー</a></div>
+          <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/')); ?>">TOP</a></div>
+          <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/#subject')); ?>">概要</a></div>
+          <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/news/')); ?>">新着情報</a></div>
+          <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/#prize')); ?>">景品一覧</a></div>
+          <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/#link')); ?>">リンク集</a></div>
+          <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/policy/')); ?>">サイトポリシー</a></div>
+          <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/contact/')); ?>">お問い合わせ</a></div>
         </div>
       </div>
       <div class="p-header__drawer-background p-drawer-background"></div>

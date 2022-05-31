@@ -123,6 +123,16 @@
     margin-left: rem(40);
   }
 }
+.p-subject__explain--top {
+  background-image: linear-gradient(to right, $red 4px, transparent 4px);
+  background-size: 12px 4px;
+  background-repeat: repeat-x;
+  background-position: right bottom;
+  padding-bottom: rem(24);
+}
+.p-subject__explain--bottom {
+  padding-top: rem(24);
+}
 .p-subject__btn {
   text-align: center;
   margin-top: rem(60);

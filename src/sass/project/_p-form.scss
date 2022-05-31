@@ -7,8 +7,6 @@
     padding: rem(32) rem(48);
   }
 }
-.p-form__dl {
-}
 .p-form__row {
   @include mq(md) {
     display: flex;
@@ -23,8 +21,10 @@
 }
 .p-form__title {
   @include mq(md) {
-    width: rem(250);
+    width: rem(300);
     padding-top: rem(8);
+    display: flex;
+    align-items: center;
   }
 }
 .p-form__title label {
@@ -39,21 +39,29 @@
   margin-top: rem(8);
   @include mq(md) {
     margin-top: initial;
-    width: calc(100% - rem(250));
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
 }
-.p-form__input--age {
-  display: flex;
-  align-items: center;
+.p-form__input--textarea {
+  flex-direction: column;
 }
+
 .p-form__sex,
 .p-form__date {
   @include mq(md) {
     width: 30%;
   }
 }
+.p-form__input--age {
+  display: flex;
+  align-items: center;
+}
 .p-form__age-after {
-  margin-left: rem(24);
+  margin-left: rem(16);
+  display: inline-block;
 }
 .p-form__attention {
   margin-top: rem(8);
@@ -107,7 +115,6 @@
   opacity: 1;
 }
 .p-form__check-label {
-  margin-top: rem(16);
 }
 .p-form__check-label:first-child {
   margin-right: rem(16);
@@ -134,4 +141,69 @@
 .p-form__button {
   margin-top: rem(40);
   text-align: center;
+}
+.p-form__button input {
+  width: rem(220);
+  font-size: rem(20);
+  color: $white;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+  background: $red;
+  padding: rem(20) 0;
+  border: 1px solid $red;
+  transition: 0.3s;
+}
+.p-form__button input:hover {
+  background: $white;
+  color: $red;
+}
+.wpcf7-form-control-wrap {
+  @include mq(md) {
+    width: 100%;
+  }
+}
+.has-free-text {
+  display: inline-flex;
+  margin-top: rem(12);
+  align-items: center;
+}
+.has-free-text label {
+  width: rem(120);
+}
+.wpcf7-free-text {
+}
+.wpcf7-list-item.first {
+  margin-left: initial;
+}
+.wpcf7-list-item {
+  margin-left: initial;
+  margin-right: rem(16);
+}
+.wpcf7-list-item label {
+  display: flex;
+  align-items: center;
+}
+.wpcf7-list-item-label {
+  line-height: 0;
+  padding-left: rem(4);
+}
+.p-form__required {
+  color: $white;
+  background: $red;
+  font-size: rem(12);
+  padding: rem(4) rem(8);
+  border-radius: rem(4);
+  margin-left: rem(16);
+}
+.p-form__required--gray {
+  background-color: rgba($color: #231815, $alpha: 0.5);
+}
+.p-form__required--green {
+  background: #8bc777;
+}
+.your-age, .your-age2 {
+  @include mq(md) {
+    width: 15%;
+  }
 }

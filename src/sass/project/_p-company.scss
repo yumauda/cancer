@@ -18,6 +18,9 @@
 }
 .p-company__title-wrapper {
   text-align: center;
+  @include mq(md) {
+    margin-top: rem(-120);
+  }
 }
 .p-company__title {
   width: 100%;
@@ -49,7 +52,7 @@
   background-position: center;
   @include mq(md) {
     padding: rem(82) rem(52);
-    margin-top: rem(-74);
+    margin-top: rem(96);
   }
 }
 .p-company__subtitle-wrapper {
@@ -83,11 +86,23 @@
 .p-company__card {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .p-company__card + .p-company__card {
-  margin-top: rem(16);
+  margin-top: rem(24);
   @include mq(md) {
     margin-top: initial;
+    border-left: 0.5px solid #231815;
+  }
+}
+.p-company__card:first-child {
+  @include mq(md) {
+    border-left: 0.5px solid #231815;
+  }
+}
+.p-company__card:last-child {
+  @include mq(md) {
+    border-right: 0.5px solid #231815;
   }
 }
 .p-company__img1 {
@@ -204,4 +219,13 @@
   text-align: center;
   margin-top: auto;
   padding-top: rem(16);
+}
+.p-company__link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }

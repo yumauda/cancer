@@ -141,6 +141,10 @@ function my_excerpt_length($length)
 }
 add_filter('excerpt_length', 'my_excerpt_length', 999);
 
+function my_confirm_contact($confirm)
+{
+	
+}
 
 /**
  * 抜粋文の省略記法の変更

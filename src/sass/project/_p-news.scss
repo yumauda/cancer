@@ -50,7 +50,9 @@
   display: inline-block;
 }
 .p-news__tweet {
+  margin-top: rem(24);
   @include mq(md) {
+    margin-top: initial;
     margin-left: rem(67);
   }
 }

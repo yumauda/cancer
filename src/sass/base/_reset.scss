@@ -28,7 +28,6 @@ dd {
 
 /* Set core root defaults */
 html {
-  scroll-behavior: smooth;
 }
 
 /* Set core body defaults */
@@ -79,9 +78,6 @@ input,
 button,
 select,
 textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   background: transparent;
   border: 1px solid #231835;
   border-radius: 0;
@@ -99,7 +95,6 @@ textarea {
   height: 150px;
 }
 
-input[type="checkbox"],
 input[type="radio"] {
   display: none;
 }
@@ -113,10 +108,15 @@ select {
 }
 
 select::-ms-expand {
-  display: none;
+  /* display: none; */
 }
 input[type="text"],
 input[type="email"],
-input[type="address"] {
+input[type="address"],
+input[type="tel"] {
   width: 100%;
+}
+input[type="checkbox"] {
+  padding: 8px;
+  cursor: pointer;
 }

@@ -17,39 +17,12 @@
                             <p class="p-home__date"><?php echo get_the_time('Y/n/j')?></p>
                         </div>
                         <div class="p-home__description">
-                            <p class="p-home__text"><?php echo wp_trim_words(get_the_title(), 20, '...'); ?></p>
+                            <p class="p-home__text"><?php echo wp_trim_words(get_the_title(), 60, '...'); ?></p>
                         </div>
                         <a href="<?php echo esc_url(get_permalink()); ?>" class="p-home__link"></a>
                     </div>
                 <?php endwhile; ?>
             <?php endif; ?>
-            <!-- <div class="p-home__row">
-                <div class="p-home__title">
-                    <p class="p-home__date">2023.02.01</p>
-                </div>
-                <div class="p-home__description">
-                    <p class="p-home__text">令和4年度 【山口県】「休日・平日夜間がん検診」を実施しています！</p>
-                </div>
-                <a href="#" class="p-home__link"></a>
-            </div>
-            <div class="p-home__row">
-                <div class="p-home__title">
-                    <p class="p-home__date">2023.02.01</p>
-                </div>
-                <div class="p-home__description">
-                    <p class="p-home__text">令和4年度誘ってがん検診キャンペーンの応募を開始いたしました。</p>
-                </div>
-                <a href="#" class="p-home__link"></a>
-            </div>
-            <div class="p-home__row">
-                <div class="p-home__title">
-                    <p class="p-home__date">2023.02.01</p>
-                </div>
-                <div class="p-home__description">
-                    <p class="p-home__text">キャンペーンサイトを公開しました。</p>
-                </div>
-                <a href="#" class="p-home__link"></a>
-            </div> -->
         </div>
     </div>
 </div>

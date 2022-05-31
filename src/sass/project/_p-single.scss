@@ -4,6 +4,7 @@
   padding-top: rem(56);
   padding-bottom: rem(80);
   position: relative;
+  margin-bottom: rem(120);
   @include mq(md) {
     padding-top: rem(80);
   }

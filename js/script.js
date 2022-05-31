@@ -46,6 +46,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     
     let header = $('.p-header').innerHeight();
     let target = $(this.hash);
+    let time = 500;
     if (!target.length) return;
     let targetY = target.offset().top - header;
     $('html,body').animate({ scrollTop: targetY }, time, 'swing');

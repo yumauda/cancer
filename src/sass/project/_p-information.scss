@@ -3,6 +3,12 @@
 .p-information {
 }
 .p-information__wrapper {
+  @include mq(md) {
+    max-width: rem(420);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .p-information__row {
   margin-top: rem(16);

@@ -13,7 +13,7 @@
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
-  top: rem(-76);
+  top: rem(-136);
   left: 0;
   right: 0;
   width: 100%;
@@ -21,14 +21,17 @@
   height: rem(150);
 }
 .p-footer__content {
-  margin-top: rem(-200);
+  margin-top: rem(-240);
 }
 .p-footer__img {
-  max-width: rem(468);
   width: 100%;
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  max-width: rem(250);
+  @include mq(md) {
+    max-width: rem(468);
+  }
 }
 .p-footer__img::before {
   padding-top: 93.16%;
@@ -47,12 +50,17 @@
 }
 .p-footer__lists {
   text-align: center;
-  margin-top: rem(40);
+  margin-top: rem(24);
   @include mq(md) {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: rem(64);
+    background-image: linear-gradient(to right, $red 4px, transparent 4px);
+    background-size: 12px 4px;
+    background-repeat: repeat-x;
+    background-position: right bottom;
+    padding-bottom: rem(40);
   }
 }
 .p-footer__list + .p-footer__list {

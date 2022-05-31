@@ -2,11 +2,14 @@
 
 .p-link {
   padding-top: rem(70);
-  padding-bottom: rem(210);
+  padding-bottom: rem(160);
   background: url(../images/common/bg-prize.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  @include mq(md){
+    padding-bottom: rem(210);
+  }
 }
 .p-link__title-wrapper {
   text-align: center;
@@ -52,7 +55,7 @@
   margin-top: rem(56);
 }
 .p-link__card {
-  background-image : linear-gradient(to right, #231815 6px, transparent 4px);
+  background-image: linear-gradient(to right, #231815 6px, transparent 4px);
   background-size: 10px 2px;
   background-repeat: repeat-x;
   background-position: right bottom;
@@ -95,12 +98,18 @@
   }
 }
 .p-link__link {
-  font-size: rem(22);
   color: #148ec7;
   text-decoration: underline;
+  font-size: rem(18);
+  @include mq(md) {
+    font-size: rem(22);
+  }
 }
 .p-link__text {
-  font-size: rem(18);
   line-height: 1.7777;
   color: #231815;
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(18);
+  }
 }

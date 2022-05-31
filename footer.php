@@ -6,22 +6,22 @@
             </figure>
             <ul class="p-footer__lists">
                 <li class="p-footer__list">
-                    <a href="" class="p-footer__link">top</a>
+                    <a href="<?php echo esc_url(home_url('/')); ?>" class="p-footer__link">top</a>
                 </li>
                 <li class="p-footer__list">
-                    <a href="" class="p-footer__link">概要</a>
+                    <a href="<?php echo esc_url(home_url('/#subject')); ?>" class="p-footer__link">概要</a>
                 </li>
                 <li class="p-footer__list">
-                    <a href="" class="p-footer__link">景品一覧</a>
+                    <a href="<?php echo esc_url(home_url('/#prize')); ?>" class="p-footer__link">景品一覧</a>
                 </li>
                 <li class="p-footer__list">
-                    <a href="" class="p-footer__link">新着情報</a>
+                    <a href="<?php echo esc_url(home_url('/news/')); ?>" class="p-footer__link">新着情報</a>
                 </li>
                 <li class="p-footer__list">
-                    <a href="" class="p-footer__link">リンク集</a>
+                    <a href="<?php echo esc_url(home_url('/#link')); ?>" class="p-footer__link">リンク集</a>
                 </li>
                 <li class="p-footer__list">
-                    <a href="" class="p-footer__link">サイトポリシー</a>
+                    <a href="<?php echo esc_url(home_url('/policy/')); ?>" class="p-footer__link">サイトポリシー</a>
                 </li>
             </ul>
             <div class="p-footer__small-wrapper">
