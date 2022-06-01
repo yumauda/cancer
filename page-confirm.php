@@ -9,7 +9,9 @@
 <section class="l-contact p-contact">
     <div class="l-inner">
         <div class="p-contact__content">
-            <?php the_content(); ?>
+            <div class="p-contact__confirm p-confirm">
+                <?php the_content(); ?>
+            </div>
         </div>
     </div>
 </section>

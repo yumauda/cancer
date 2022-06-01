@@ -6,11 +6,13 @@
         </div>
     </div>
 </section>
-<section class="l-contact p-contact">
+<div class="l-contact p-contact">
     <div class="l-inner">
-        <div class="p-contact__content">
-            <?php the_content(); ?>
+        <div class="p-contact__content p-thanks">
+            <div class="p-thanks__comment">
+                <h3 class="p-thanks__text">ご応募いただきまして、誠にありがとうございます。<br>ご入力いただきました個人情報は、責任を持って管理いたします。</h3>
+            </div>
         </div>
     </div>
-</section>
+</div>
 <?php get_footer(); ?>

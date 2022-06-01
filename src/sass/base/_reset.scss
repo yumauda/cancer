@@ -108,7 +108,12 @@ select {
 }
 
 select::-ms-expand {
-  /* display: none; */
+  display: none;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 input[type="text"],
 input[type="email"],
@@ -117,6 +122,8 @@ input[type="tel"] {
   width: 100%;
 }
 input[type="checkbox"] {
-  padding: 8px;
-  cursor: pointer;
+  /* padding: 8px;
+  cursor: pointer; */
+  display: none;
 }
+

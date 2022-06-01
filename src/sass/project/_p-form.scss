@@ -68,54 +68,7 @@
   font-size: rem(16);
   color: #231815;
 }
-.p-form__check--input {
-  display: none;
-}
-.p-form__check--input + span {
-  cursor: pointer;
-  display: inline-block;
-  margin: 0 0.2em 0;
-  padding: 0 0 0 rem(28);
-  position: relative;
-  letter-spacing: 0.02em;
-}
 
-.p-form__check--input + span::before {
-  -webkit-transform: translateY(-50%);
-  background: #fff;
-  border: 1px solid #5b5b5b;
-  content: "";
-  display: block;
-  left: 0;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: rem(20);
-  height: rem(20);
-}
-
-.p-form__check--input + span::after {
-  -webkit-transform: translateY(-50%) rotate(-45deg);
-  border-bottom: 2px solid #000;
-  border-left: 2px solid #000;
-  content: "";
-  display: block;
-  height: 0.6em;
-  left: rem(4);
-  margin-top: -0.2em;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%) rotate(-45deg);
-  transition: all 0.3s ease 0s;
-  width: 1em;
-}
-
-.p-form__check--input:checked + span::after {
-  opacity: 1;
-}
-.p-form__check-label {
-}
 .p-form__check-label:first-child {
   margin-right: rem(16);
 }
@@ -165,13 +118,14 @@
 }
 .has-free-text {
   display: inline-flex;
-  margin-top: rem(12);
+  margin-top: rem(6) !important;
   align-items: center;
 }
 .has-free-text label {
   width: rem(120);
 }
 .wpcf7-free-text {
+  margin-left: rem(8);
 }
 .wpcf7-list-item.first {
   margin-left: initial;
@@ -202,8 +156,71 @@
 .p-form__required--green {
   background: #8bc777;
 }
-.your-age, .your-age2 {
+.your-age,
+.your-age2 {
   @include mq(md) {
     width: 15%;
   }
+}
+.wpcf7-form-control-wrap {
+  display: block;
+}
+.wpcf7-form-control.wpcf7-checkbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+span.wpcf7-list-item {
+  position: relative;
+  margin-top: rem(16);
+  margin-right: rem(24);
+}
+.wpcf7-list-item-label {
+  /*項目の色や文字サイズ*/
+  color: #231815;
+  cursor: pointer;
+  font-size: rem(16);
+}
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0; /*既存のチェックボックスを見えなくする*/
+}
+.wpcf7-list-item-label:before {
+  /*チェックボックスの枠*/
+  content: "";
+  border: 1px solid #231815;
+  display: inline-block;
+  width: rem(20);
+  height: rem(20);
+  position: relative;
+  top: rem(-2);
+  margin-right: rem(12);
+  vertical-align: middle;
+  cursor: pointer;
+  text-align: center;
+}
+input[type="checkbox"]:checked + .wpcf7-list-item-label:after {
+  /*チェックアイコン*/
+  content: "";
+  display: block;
+  position: absolute;
+  top: rem(-4);
+  left: rem(3);
+  width: rem(20);
+  height: rem(12);
+  border-left: 2px solid #231815;
+  border-bottom: 2px solid #231815;
+  transform: rotate(-45deg);
+}
+.has-free-text input[type="checkbox"]:checked + .wpcf7-list-item-label:after {
+  /*チェックアイコン*/
+  content: "";
+  display: block;
+  position: absolute;
+  top: rem(7);
+  left: rem(3);
+  width: rem(20);
+  height: rem(12);
+  border-left: 2px solid #231815;
+  border-bottom: 2px solid #231815;
+  transform: rotate(-45deg);
 }
