@@ -42,7 +42,6 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
   }
 }
 .p-form__input--textarea {
@@ -118,14 +117,20 @@
 }
 .has-free-text {
   display: inline-flex;
+  flex-wrap: wrap;
   margin-top: rem(6) !important;
   align-items: center;
+  @include mq(md) {
+    flex-wrap: nowrap;
+  }
 }
 .has-free-text label {
   width: rem(120);
 }
 .wpcf7-free-text {
-  margin-left: rem(8);
+  @include mq(md) {
+    margin-left: rem(8);
+  }
 }
 .wpcf7-list-item.first {
   margin-left: initial;
@@ -223,4 +228,7 @@ input[type="checkbox"]:checked + .wpcf7-list-item-label:after {
   border-left: 2px solid #231815;
   border-bottom: 2px solid #231815;
   transform: rotate(-45deg);
+}
+.wpcf7-spinner {
+  display: none;
 }
