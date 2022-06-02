@@ -190,6 +190,8 @@ input[type=checkbox] {
 }
 
 .l-inner {
+  max-width: 600px;
+  max-width: 37.5rem;
   width: 100%;
   padding-right: 20px;
   padding-left: 20px;
@@ -231,20 +233,19 @@ input[type=checkbox] {
   position: relative;
   z-index: 0;
   background: #fff;
-  border-radius: 0.9375rem;
   padding-top: 40px;
   padding-top: 2.5rem;
   padding-bottom: 70px;
   padding-bottom: 4.375rem;
+  background: url(../images/common/bg-company.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 @media screen and (min-width: 768px) {
   .p-company {
     padding-top: 4.375rem;
     border-radius: 0;
-    background: url(../images/common/bg-company.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
   }
 }
 
@@ -290,15 +291,20 @@ input[type=checkbox] {
 }
 
 .p-company__content {
-  background: url(../images/common/company-bg.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
+  background-color: #fff;
+  padding: 24px 16px;
+  padding: 1.5rem 1rem;
+  border-radius: 0.625rem;
 }
 @media screen and (min-width: 768px) {
   .p-company__content {
     padding: 5.125rem 3.25rem;
+    background: url(../images/common/company-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
     margin-top: 6rem;
+    border-radius: 0;
   }
 }
 
@@ -365,14 +371,31 @@ input[type=checkbox] {
 }
 
 @media screen and (min-width: 768px) {
+  .p-company__card:nth-child(3n) {
+    border-right: 0.5px solid #231815;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .p-company__card:first-child {
     border-left: 0.5px solid #231815;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .p-company__card:last-child {
-    border-right: 0.5px solid #231815;
+  .p-company__card--last {
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-company__card--last::before {
+    position: absolute;
+    content: "";
+    width: 0.03125rem;
+    height: 100%;
+    background: #231815;
+    right: -2rem;
   }
 }
 
@@ -1468,8 +1491,8 @@ input[type=checkbox]:checked + .wpcf7-list-item-label:after {
   content: "";
   display: block;
   position: absolute;
-  top: 7px;
-  top: 0.4375rem;
+  top: -3px;
+  top: -0.1875rem;
   left: 3px;
   left: 0.1875rem;
   width: 20px;
@@ -1480,6 +1503,11 @@ input[type=checkbox]:checked + .wpcf7-list-item-label:after {
   border-bottom: 2px solid #231815;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+@media screen and (min-width: 768px) {
+  .has-free-text input[type=checkbox]:checked + .wpcf7-list-item-label:after {
+    top: 0.4375rem;
+  }
 }
 
 .wpcf7-spinner {
@@ -1639,17 +1667,18 @@ input[type=checkbox]:checked + .wpcf7-list-item-label:after {
 .p-heart {
   padding-top: 70px;
   padding-top: 4.375rem;
-  background: url(../images/common/bg-heart.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   position: relative;
   z-index: 1;
   padding-bottom: 40px;
   padding-bottom: 2.5rem;
+  background: #fff;
 }
 @media screen and (min-width: 768px) {
   .p-heart {
+    background: url(../images/common/bg-heart.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     padding-bottom: 4.375rem;
   }
 }
@@ -1800,6 +1829,8 @@ input[type=checkbox]:checked + .wpcf7-list-item-label:after {
   max-width: 1047px;
   max-width: 65.4375rem;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 1.5625rem;
   margin-top: 24px;
   margin-top: 1.5rem;
@@ -2013,6 +2044,8 @@ input[type=checkbox]:checked + .wpcf7-list-item-label:after {
   border-radius: 1.25rem;
   padding: 16px;
   padding: 1rem;
+  margin-top: -28px;
+  margin-top: -1.75rem;
 }
 @media screen and (min-width: 768px) {
   .p-link__content {
@@ -2357,8 +2390,8 @@ input[type=checkbox]:checked + .wpcf7-list-item-label:after {
 }
 
 .p-page-mv__title {
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 20px;
+  font-size: 1.25rem;
   color: #2e2624;
   background: #fff;
   display: inline-block;
@@ -2453,10 +2486,12 @@ input[type=checkbox]:checked + .wpcf7-list-item-label:after {
 }
 
 .p-prize {
-  background: #fff;
-  border-radius: 1.25rem;
   padding: 32px 16px;
   padding: 2rem 1rem;
+  background: url(../images/common/bg-prize.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 @media screen and (min-width: 768px) {
   .p-prize {
@@ -2466,11 +2501,6 @@ input[type=checkbox]:checked + .wpcf7-list-item-label:after {
     padding-left: initial;
     padding-right: 0;
     padding-right: initial;
-    background: url(../images/common/bg-prize.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 0;
   }
 }
 
@@ -2512,13 +2542,17 @@ input[type=checkbox]:checked + .wpcf7-list-item-label:after {
 }
 
 .p-prize__content {
-  background: url(../images/common/prize-content-bg.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
+  background: #fff;
+  border-radius: 0.625rem;
+  padding: 24px 16px;
+  padding: 1.5rem 1rem;
 }
 @media screen and (min-width: 768px) {
   .p-prize__content {
+    background: url(../images/common/prize-content-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
     padding: 5.125rem 3.25rem;
   }
 }
@@ -2882,9 +2916,9 @@ input[type=checkbox]:checked + .wpcf7-list-item-label:after {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 8.75rem;
-    height: 12.5625rem;
-    top: 38%;
+    width: min(8.75rem, 9.7222222222vw);
+    height: min(12.5625rem, 13.9583333333vw);
+    top: 36%;
     right: 0.625rem;
   }
 }
@@ -3179,8 +3213,8 @@ input[type=checkbox]:checked + .wpcf7-list-item-label:after {
 .c-prize-description {
   line-height: 1.4545;
   color: #231815;
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 15px;
+  font-size: 0.9375rem;
 }
 @media screen and (min-width: 768px) {
   .c-prize-description {

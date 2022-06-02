@@ -213,7 +213,7 @@
             </div>
             <div class="p-subject__row">
                 <dt class="p-subject__title">
-                    <p class="c-subject-title">キャンペーンの<br>お問い合わせ</p>
+                    <p class="c-subject-title">キャンペーンの<br class="u-desktop">お問い合わせ</p>
                 </dt>
                 <dd class="p-subject__explain">
                     <p class="c-subject-text--smallRed">誘ってがん検診キャンペーン事務局</p>
@@ -477,7 +477,7 @@
                         <p class="p-company__name">株式会社丸久</p>
                         <a href="#" class="p-company__link"></a>
                     </li>
-                    <li class="p-company__card">
+                    <li class="p-company__card p-company__card--last">
                         <figure class="p-company__img5">
                             <img src="<?php echo get_template_directory_uri() ?>/images/common/company-img5.png" alt="第一生命保険株式会社">
                         </figure>
@@ -488,7 +488,7 @@
             </div>
             <div class="p-company__block">
                 <div class="p-company__subtitle-wrapper">
-                    <p class="p-company__subtitle">健康分野に関する地域活性化包括連携協定企業等</p>
+                    <p class="p-company__subtitle">健康分野に関する<br class="u-mobile">地域活性化包括連携協定企業等</p>
                 </div>
                 <ul class="p-company__cards">
                     <li class="p-company__card">
@@ -512,7 +512,7 @@
                         <p class="p-company__name">ミズノ株式会社</p>
                         <a href="#" class="p-company__link"></a>
                     </li>
-                    <li class="p-company__card">
+                    <li class="p-company__card p-company__card--last">
                         <figure class="p-company__img5">
                             <img src="<?php echo get_template_directory_uri() ?>/images/common/company-img9.png" alt="レノファ株式会社">
                         </figure>

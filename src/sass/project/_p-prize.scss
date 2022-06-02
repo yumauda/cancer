@@ -1,19 +1,16 @@
 @use "global" as *;
 
 .p-prize {
-  background: $white;
-  border-radius: rem(20);
   padding: rem(32) rem(16);
+  background: url(../images/common/bg-prize.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   @include mq(md) {
     padding-top: rem(96);
     padding-bottom: rem(70);
     padding-left: initial;
     padding-right: initial;
-    background: url(../images/common/bg-prize.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 0;
   }
 }
 .p-prize__title-wrapper {
@@ -44,11 +41,14 @@
   transform: translate(-50%, -50%);
 }
 .p-prize__content {
-  background: url(../images/common/prize-content-bg.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
+  background: $white;
+  border-radius: rem(10);
+  padding: rem(24) rem(16);
   @include mq(md) {
+    background: url(../images/common/prize-content-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
     padding: rem(82) rem(52);
   }
 }

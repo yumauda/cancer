@@ -41,6 +41,7 @@
   background: $white;
   border-radius: rem(20);
   padding: rem(16);
+  margin-top: rem(-28);
   @include mq(md) {
     background: url(../images/common/company-bg.png);
     background-repeat: no-repeat;

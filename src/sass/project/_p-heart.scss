@@ -2,14 +2,15 @@
 
 .p-heart {
   padding-top: rem(70);
-  background: url(../images/common/bg-heart.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   position: relative;
   z-index: 1;
   padding-bottom: rem(40);
+  background: $white;
   @include mq(md) {
+    background: url(../images/common/bg-heart.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     padding-bottom: rem(70);
   }
 }

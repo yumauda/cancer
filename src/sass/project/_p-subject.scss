@@ -19,9 +19,9 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: rem(140);
-    height: rem(201);
-    top: 38%;
+    width: min(rem(140), calc(140 / 1440) * 100vw);
+    height: min(rem(201), calc(201 / 1440) * 100vw);
+    top: 36%;
     right: rem(10);
   }
 }
