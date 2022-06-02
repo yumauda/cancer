@@ -87,7 +87,6 @@ dd {
   margin: 0;
 }
 
-/* Set core root defaults */
 /* Set core body defaults */
 body {
   min-height: 100vh;
@@ -150,6 +149,29 @@ button {
   border: none;
 }
 
+input[type=submit],
+input[type=button] {
+  border-radius: 0;
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+       appearance: button;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+
+input[type=submit]::-webkit-search-decoration,
+input[type=button]::-webkit-search-decoration {
+  display: none;
+}
+
+input[type=submit]::focus,
+input[type=button]::focus {
+  outline-offset: -2px;
+}
+
 textarea {
   resize: none;
   width: 100%;
@@ -187,6 +209,10 @@ input[type=tel] {
 
 input[type=checkbox] {
   display: none;
+}
+
+input[type=number] {
+  width: 85%;
 }
 
 .l-inner {
