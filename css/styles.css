@@ -186,8 +186,6 @@ input[type=tel] {
 }
 
 input[type=checkbox] {
-  /* padding: 8px;
-  cursor: pointer; */
   display: none;
 }
 
@@ -2127,17 +2125,14 @@ input[type=checkbox]:checked + .wpcf7-list-item-label:after {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  height: 100vh;
   height: min(1100px, 80.5270863836vw);
   height: min(68.75rem, 80.5270863836vw);
-  margin-top: 60px;
-  margin-top: 3.75rem;
+  margin-top: 70px;
+  margin-top: 4.375rem;
 }
 @media screen and (min-width: 768px) {
   .p-mv {
-    /* height: rem(1100); */
-    margin-top: 0;
-    margin-top: initial;
+    margin-top: 4.375rem;
   }
 }
 
