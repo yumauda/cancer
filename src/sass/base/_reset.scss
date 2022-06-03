@@ -126,6 +126,10 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background-image: url(../images/common/select-icon.svg);
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: 13px 13px;
 }
 input[type="text"],
 input[type="email"],

@@ -198,6 +198,10 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background-image: url(../images/common/select-icon.svg);
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: 13px 13px;
 }
 
 input[type=text],
@@ -1833,6 +1837,16 @@ input[type=checkbox]:checked + .wpcf7-list-item-label:after {
   z-index: 1;
 }
 
+.p-home__pagenavi {
+  margin-top: 32px;
+  margin-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .p-home__pagenavi {
+    margin-top: 3.5rem;
+  }
+}
+
 .p-how {
   background: #fff;
   border-radius: 1.25rem;
@@ -2458,6 +2472,43 @@ input[type=checkbox]:checked + .wpcf7-list-item-label:after {
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.wp-pagenavi {
+  clear: both;
+  text-align: center;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+
+.wp-pagenavi a,
+.wp-pagenavi span {
+  color: #e9604b;
+  background-color: #fff;
+  border: 2px solid #e9604b;
+  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
+  margin: 0 6px;
+  margin: 0 0.375rem;
+  white-space: nowrap;
+  border-radius: 0.3125rem;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  text-align: center;
+  text-decoration: none;
+}
+
+.wp-pagenavi a:hover {
+  color: #fff;
+  background-color: #e9604b;
+  border-color: #e9604b;
+}
+
+.wp-pagenavi span.current {
+  color: #fff;
+  background-color: #e9604b;
+  border-color: #e9604b;
+  font-weight: bold;
 }
 
 .p-policy {
