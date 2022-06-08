@@ -2,7 +2,10 @@
 
 .p-totop {
   position: fixed;
-  bottom: rem(40);
   right: rem(20);
+  bottom: rem(20);
   z-index: 999;
+  @include mq(md) {
+    bottom: rem(40);
+  }
 }

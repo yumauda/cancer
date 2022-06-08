@@ -44,7 +44,7 @@
                     <h3 class="c-policy-title">本サイトへの問い合わせについて</h3>
                 </div>
                 <div class="p-policy__text">
-                    <p class="c-policy-text">本サイトに関する問い合わせは、情山口県健康福祉部医療政策課 医療対策班で受け付けます。<br>
+                    <p class="c-policy-text">本サイトに関する問い合わせは、山口県健康福祉部医療政策課 医療対策班で受け付けます。<br>
                         山口県健康福祉部医療政策課&nbsp;&nbsp;医療対策班<br>
                         〒753-8501&nbsp;&nbsp;山口県山口市滝町1番1号<br>
                         TEL：083-933-2961&nbsp;&nbsp;FAX：083-933-2829<br>

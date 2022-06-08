@@ -54,6 +54,9 @@
   letter-spacing: 0.075em;
   margin-top: rem(8);
   font-size: rem(22);
+  display: inline;
+  border-bottom: 8px double #e9604b;
+  line-height: 2;
   @include mq(md) {
     font-size: rem(38);
   }

@@ -9,3 +9,9 @@
     font-size: rem(22);
   }
 }
+.c-subject-title--small {
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(18);
+  }
+}

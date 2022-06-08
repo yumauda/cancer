@@ -25,7 +25,7 @@
   }
 }
 .p-link__title::before {
-  padding-top: 21.777%;
+  padding-top: 22.9677%;
   display: block;
   content: "";
 }
@@ -40,14 +40,13 @@
 .p-link__content {
   background: $white;
   border-radius: rem(20);
-  padding: rem(16);
   margin-top: rem(-28);
+  padding-top: rem(16);
+  padding-left: rem(16);
+  padding-right: rem(16);
+  padding-bottom: rem(48);
   @include mq(md) {
-    background: url(../images/common/company-bg.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-    border-radius: 0;
+    border-radius: rem(32);
     padding: rem(82) rem(52);
     margin-top: rem(-74);
   }
