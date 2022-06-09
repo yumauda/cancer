@@ -37,15 +37,17 @@
   padding-bottom: rem(16);
   @include mq(md) {
     padding-bottom: rem(40);
+    font-size: rem(32);
   }
 }
 .p-single p {
   font-size: rem(14);
   color: #2e2624;
-  line-height: 1.5;
+  line-height: 1.7;
   padding-top: rem(16);
   @include mq(md) {
     padding-top: rem(40);
+    line-height: 1.5;
   }
 }
 .p-single img {

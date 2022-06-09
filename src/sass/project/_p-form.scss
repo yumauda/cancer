@@ -235,3 +235,14 @@ input[type="checkbox"]:checked + .wpcf7-list-item-label:after {
 .wpcf7-spinner {
   display: none;
 }
+.wpcf7-previous {
+  background: $white !important;
+  transition: 0.3s !important;
+  color: $red !important;
+}
+.wpcf7-previous:hover {
+  background: $red !important;
+  border: $red !important;
+  color: $white !important;
+  transition: 0.3s !important;
+}

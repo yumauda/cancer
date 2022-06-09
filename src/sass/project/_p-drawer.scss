@@ -88,3 +88,16 @@
 .p-drawer-background.is-active {
   display: block;
 }
+.p-drawer-content__btn {
+  display: inline-block;
+  width: rem(150);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: rem(20) 0;
+  color: $white;
+  background: $red;
+}
+.p-drawer-content__item--btn {
+  margin-top: rem(16);
+}

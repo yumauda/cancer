@@ -38,3 +38,14 @@ a {
     }
   }
 }
+.home {
+  background-color: #f7cf75;
+  background-image: radial-gradient(
+      rgba(249, 223, 164, 0.73) 26%,
+      transparent 29%
+    ),
+    radial-gradient(rgba(249, 223, 164, 0.73) 26%, transparent 29%);
+  background-position: 0 0, 16px 16px;
+  background-size: 32px 32px;
+  overflow-x: hidden;
+}

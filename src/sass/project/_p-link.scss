@@ -3,10 +3,6 @@
 .p-link {
   padding-top: rem(70);
   padding-bottom: rem(160);
-  background: url(../images/common/bg-prize.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   @include mq(md){
     padding-bottom: rem(210);
   }

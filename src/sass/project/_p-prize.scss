@@ -2,10 +2,6 @@
 
 .p-prize {
   padding: rem(32) rem(16);
-  background: url(../images/common/bg-prize.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   @include mq(md) {
     padding-top: rem(96);
     padding-bottom: rem(70);
@@ -66,6 +62,11 @@
 .p-prize__detail {
   text-align: center;
   margin-top: rem(32);
+}
+.p-prize__detail--second {
+  @include mq(md) {
+    margin-top: rem(48);
+  }
 }
 .p-prize__description {
   margin-top: rem(18);

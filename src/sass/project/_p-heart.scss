@@ -6,13 +6,27 @@
   z-index: 1;
   padding-bottom: rem(40);
   background: $white;
+  position: relative;
   @include mq(md) {
-    background: url(../images/common/bg-heart.jpg);
+/*     background: url(../images/common/bg-heart.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
     padding-bottom: rem(70);
   }
+}
+.p-heart::before {
+  position: absolute;
+  content: '';
+  bottom: rem(-90);
+  background: url(../images/common/fukidasi.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: rem(135);
+  left: 0;
+  right: 0;
 }
 .p-heart__content {
   text-align: center;

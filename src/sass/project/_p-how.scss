@@ -1,17 +1,18 @@
 @use "global" as *;
 
 .p-how {
-  background: $white;
-  border-radius: rem(20);
+  /* background: $white; */
+  /* border-radius: rem(20); */
+  background-color: rgba($color: #fff, $alpha: 0.2);
   padding: rem(16);
   @include mq(md) {
     padding-top: rem(112);
     padding-bottom: rem(70);
-    background: url(../images/common/bg-how.jpg);
+    /* background: url(../images/common/bg-how.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 0;
+    background-position: center; */
+    /* border-radius: 0; */
   }
 }
 .p-how__content {

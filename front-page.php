@@ -142,7 +142,8 @@
                     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
                 <figure class="p-news__img">
-                    <img src="<?php echo get_template_directory_uri() ?>/images/common/news-img.png" alt="twitterニュース画像">
+                    <!-- <img src="<?php echo get_template_directory_uri() ?>/images/common/news-img.png" alt="twitterニュース画像"> -->
+                    <?php echo do_shortcode('[instagram-feed feed=1]'); ?>
                 </figure>
             </div>
         </div>
@@ -229,7 +230,7 @@
                         （9：00～18：00&nbsp;&nbsp;土・日・祝日・年末年始を除く）</p>
                     <p class="p-subject__explain--bottom c-subject-text--smallRed">【よくある質問について】</p>
                     <p class="c-subject-text--other">キャンペーンや検診についてよくいただく質問をまとめています。</p>
-                    <a href="<?php echo esc_url(home_url('/faq.pdf/')); ?>" class="p-subject__pdf" target="_blank" rel="noopener noreferrer">Q＆A&nbsp;ダウンロード（PDF）</a>
+                    <a href="https://first-step-yuma.com/cancer/wp-content/uploads/2022/06/faq.pdf" class="p-subject__pdf" target="_blank" rel="noopener noreferrer">Q＆A&nbsp;ダウンロード（PDF）</a>
                 </dd>
             </div>
             <div class="p-subject__row">
@@ -268,7 +269,7 @@
                             <p class="c-prize-title">県知事賞</p>
                         </div>
                         <div class="p-prize__description">
-                            <p class="c-prize-description">山口県産 海の幸・山の幸の詰め合わせ</p>
+                            <p class="c-prize-description">山口県産 海の幸・山の幸の詰め合わせ<br>・ペア2組（1・2回目各抽選）</p>
                         </div>
                     </div>
                 </li>
@@ -276,12 +277,12 @@
                     <figure class="p-prize__img2">
                         <img src="<?php echo get_template_directory_uri() ?>/images/common/prize-img2.jpg" alt="健康福祉部長賞">
                     </figure>
-                    <div class="p-prize__detail">
+                    <div class="p-prize__detail p-prize__detail--second">
                         <div class="p-prize__detail-title">
                             <p class="c-prize-title">健康福祉部長賞</p>
                         </div>
                         <div class="p-prize__description">
-                            <p class="c-prize-description">山口県特産品</p>
+                            <p class="c-prize-description">山口県特産品<br>・ペア10組（1・2回目各抽選）</p>
                         </div>
                     </div>
                 </li>
@@ -481,8 +482,8 @@
                         <figure class="p-company__img">
                             <img src="<?php echo get_template_directory_uri() ?>/images/common/company-img2.jpg" alt="アフラック">
                         </figure>
-                        <p class="p-company__name">アフラック</p>
-                        <a href="<?php echo esc_url('https://www.tokiomarine-nichido.co.jp'); ?>" class="p-company__link" target="_blank" rel="noopener noreferrer"></a>
+                        <p class="p-company__name">アフラック生命保険株式会社</p>
+                        <a href="<?php echo esc_url('https://www.aflac.co.jp'); ?>" class="p-company__link" target="_blank" rel="noopener noreferrer"></a>
                     </li>
                     <li class="p-company__card">
                         <figure class="p-company__img">
@@ -538,7 +539,7 @@
                             <img src="<?php echo get_template_directory_uri() ?>/images/common/company-img9.jpg" alt="レノファ株式会社">
                         </figure>
                         <p class="p-company__name">レノファ株式会社</p>
-                        <a href="<?php echo esc_url('https://www.the-fuji.com'); ?>" class="p-company__link" target="_blank" rel="noopener noreferrer"></a>
+                        <a href="<?php echo esc_url('https://www.renofa.com'); ?>" class="p-company__link" target="_blank" rel="noopener noreferrer"></a>
                     </li>
                     <li class="p-company__card p-company__card--last">
                         <figure class="p-company__img">

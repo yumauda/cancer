@@ -21,7 +21,8 @@
   <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
+  <?php wp_body_open(); ?>
   <header class="l-header p-header">
     <div class="l-inner">
       <button class="p-header__drawer p-drawer-icon">
@@ -39,7 +40,7 @@
           <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/#prize')); ?>">景品一覧</a></div>
           <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/#link')); ?>">リンク集</a></div>
           <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/policy/')); ?>">サイトポリシー</a></div>
-          <div class="p-drawer-content__item"><a href="<?php echo esc_url(home_url('/contact/')); ?>">お問い合わせ</a></div>
+          <div class="p-drawer-content__item p-drawer-content__item--btn"><a class="p-drawer-content__btn" href="<?php echo esc_url(home_url('/contact/')); ?>">応募する</a></div>
         </div>
       </div>
       <div class="p-header__drawer-background p-drawer-background"></div>

@@ -21,7 +21,7 @@
                     <a href="<?php echo esc_url(home_url('/#link')); ?>" class="p-footer__link">リンク集</a>
                 </li>
                 <li class="p-footer__list">
-                    <a href="<?php echo esc_url(home_url('/policy/')); ?>" class="p-footer__link">サイトポリシー</a>
+                    <a href="<?php echo esc_url(home_url('/policy')); ?>" class="p-footer__link">サイトポリシー</a>
                 </li>
             </ul>
             <div class="p-footer__small-wrapper">

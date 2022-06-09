@@ -3,11 +3,8 @@
 .p-subject {
   padding-top: rem(70);
   padding-bottom: rem(70);
-  background: url(../images/common/bg-subject.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   position: relative;
+  background-color: rgba($color: #fff, $alpha: 0.2);
 }
 .p-subject::before {
   display: none;
@@ -95,6 +92,9 @@
 }
 .p-subject__detail {
   margin-top: rem(20);
+  @include mq(md){
+    margin-top: rem(48);
+  }
 }
 .p-subject__row {
   margin-top: rem(16);

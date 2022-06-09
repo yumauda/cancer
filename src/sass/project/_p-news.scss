@@ -3,6 +3,7 @@
 .p-news {
   padding-top: rem(70);
   padding-bottom: rem(70);
+  background: $white;
 }
 .p-news__content {
   @include mq(md) {
@@ -57,23 +58,7 @@
   }
 }
 .p-news__img {
-  margin-top: rem(24);
   max-width: rem(489);
   width: 100%;
-  position: relative;
 }
-.p-news__img::before {
-  padding-top: 33.3333%;
-  display: block;
-  content: "";
-}
-.p-news__img img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+

@@ -9,5 +9,10 @@
   background-color: #e8604b;
 }
 .c-contact-title--green {
+  font-size: rem(20);
+  font-weight: 400;
+  color: $white;
+  display: inline-block;
+  padding: rem(10) rem(24);
   background-color: #8bc777;
 }
