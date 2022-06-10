@@ -1,19 +1,24 @@
 @use "global" as *;
 
 .p-company {
-  position: relative;
-  z-index: 0;
-  padding-top: rem(40);
+  padding-top: rem(80);
   padding-bottom: rem(70);
-  background-color: rgba($color: #fff, $alpha: 0.2);
-/*   background: url(../images/common/bg-company.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
+  position: relative;
   @include mq(md) {
-    padding-top: rem(70);
-    border-radius: 0;
+    padding-top: rem(188);
   }
+}
+.p-company::before {
+  content: "";
+  position: absolute;
+  background: #e9ea93;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
 .p-company__title-wrapper {
   text-align: center;
@@ -48,10 +53,11 @@
   background-color: $white;
   padding: rem(24) rem(16);
   border-radius: rem(10);
+  margin-top: rem(-28);
   @include mq(md) {
     padding: rem(82) rem(52);
     border-radius: rem(32);
-    margin-top: rem(96);
+    margin-top: rem(-36);
   }
 }
 .p-company__subtitle-wrapper {
@@ -109,7 +115,7 @@
 }
 .p-company__card:last-child::before {
   width: 0%;
-  @include mq(md){
+  @include mq(md) {
     width: rem(1);
   }
 }

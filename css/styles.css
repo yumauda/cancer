@@ -58,14 +58,6 @@ a {
   }
 }
 
-.home {
-  background-color: #f7cf75;
-  background-image: radial-gradient(rgba(249, 223, 164, .73) 26%, transparent 29%), radial-gradient(rgba(249, 223, 164, .73) 26%, transparent 29%);
-  background-position: 0 0, 16px 16px;
-  background-size: 32px 32px;
-  overflow-x: hidden;
-}
-
 *,
 *::before,
 *::after {
@@ -278,23 +270,29 @@ input[type=number] {
 }
 
 .p-company {
-  position: relative;
-  z-index: 0;
-  padding-top: 40px;
-  padding-top: 2.5rem;
+  padding-top: 80px;
+  padding-top: 5rem;
   padding-bottom: 70px;
   padding-bottom: 4.375rem;
-  background-color: rgba(255, 255, 255, .2);
-  /*   background: url(../images/common/bg-company.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; */
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .p-company {
-    padding-top: 4.375rem;
-    border-radius: 0;
+    padding-top: 11.75rem;
   }
+}
+
+.p-company::before {
+  content: "";
+  position: absolute;
+  background: #e9ea93;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .p-company__title-wrapper {
@@ -343,12 +341,14 @@ input[type=number] {
   padding: 24px 16px;
   padding: 1.5rem 1rem;
   border-radius: 0.625rem;
+  margin-top: -28px;
+  margin-top: -1.75rem;
 }
 @media screen and (min-width: 768px) {
   .p-company__content {
     padding: 5.125rem 3.25rem;
     border-radius: 2rem;
-    margin-top: 6rem;
+    margin-top: -2.25rem;
   }
 }
 
@@ -602,10 +602,20 @@ input[type=number] {
   padding-top: 4.375rem;
   padding-bottom: 70px;
   padding-bottom: 4.375rem;
-  /*   background: url(../images/common/bg-consultation.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; */
+  position: relative;
+}
+
+.p-consultation::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f7cf75;
+  z-index: -1;
 }
 
 .p-consultation__content {
@@ -879,6 +889,13 @@ input[type=number] {
   margin-top: 5rem;
 }
 
+.p-dotted {
+  background-image: radial-gradient(rgba(255, 255, 255, .2) 25%, transparent 0%), radial-gradient(rgba(255, 255, 255, .2) 25%, transparent 0%);
+  background-position: 0 0, 30px 30px;
+  background-size: 60px 60px;
+  overflow-x: hidden;
+}
+
 .p-drawer-icon {
   position: fixed;
   top: 16px;
@@ -1043,10 +1060,20 @@ input[type=number] {
   height: 150px;
   height: 9.375rem;
 }
+@media screen and (min-width: 768px) {
+  .p-footer::before {
+    top: -8.3125rem;
+  }
+}
 
 .p-footer__content {
   margin-top: -240px;
   margin-top: -15rem;
+}
+@media screen and (min-width: 768px) {
+  .p-footer__content {
+    margin-top: -20rem;
+  }
 }
 
 .p-footer__img {
@@ -1536,11 +1563,29 @@ input[type=checkbox]:checked + .wpcf7-list-item-label:after {
   transition: 0.3s !important;
 }
 
+.p-form__input--short {
+  width: 45% !important;
+}
+
 .p-goods {
   padding-top: 75px;
   padding-top: 4.6875rem;
   padding-bottom: 70px;
   padding-bottom: 4.375rem;
+  position: relative;
+}
+
+.p-goods::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f7cf75;
+  z-index: -1;
 }
 
 .p-goods__title {
@@ -1812,22 +1857,30 @@ input[type=checkbox]:checked + .wpcf7-list-item-label:after {
 }
 
 .p-how {
-  /* background: $white; */
-  /* border-radius: rem(20); */
-  background-color: rgba(255, 255, 255, .2);
-  padding: 16px;
-  padding: 1rem;
+  padding-top: 32px;
+  padding-top: 2rem;
+  padding-bottom: 40px;
+  padding-bottom: 2.5rem;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .p-how {
     padding-top: 7rem;
     padding-bottom: 4.375rem;
-    /* background: url(../images/common/bg-how.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; */
-    /* border-radius: 0; */
   }
+}
+
+.p-how::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #e9ea93;
+  z-index: -1;
 }
 
 .p-how__content {
@@ -1881,15 +1934,25 @@ input[type=checkbox]:checked + .wpcf7-list-item-label:after {
 }
 
 .p-how__detail {
-  background: url(../images/common/how-wrapper-background.png);
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  margin-top: 24px;
-  margin-top: 1.5rem;
+  background-color: #fff;
+  padding-top: 48px;
+  padding-top: 3rem;
+  padding-left: 24px;
+  padding-left: 1.5rem;
+  padding-right: 24px;
+  padding-right: 1.5rem;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
+  margin-top: -28px;
+  margin-top: -1.75rem;
+  border-radius: 1.25rem;
 }
 @media screen and (min-width: 768px) {
   .p-how__detail {
+    background: url(../images/common/how-wrapper-background.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
     padding-top: 5rem;
     padding-bottom: 2.6875rem;
     padding-left: 3.25rem;
@@ -1997,11 +2060,25 @@ input[type=checkbox]:checked + .wpcf7-list-item-label:after {
   padding-top: 4.375rem;
   padding-bottom: 160px;
   padding-bottom: 10rem;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .p-link {
     padding-bottom: 13.125rem;
   }
+}
+
+.p-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #f7cf75;
+  z-index: -1;
 }
 
 .p-link__title-wrapper {
@@ -2058,7 +2135,7 @@ input[type=checkbox]:checked + .wpcf7-list-item-label:after {
   .p-link__content {
     border-radius: 2rem;
     padding: 5.125rem 3.25rem;
-    margin-top: -4.625rem;
+    margin-top: -2.5rem;
   }
 }
 
@@ -2488,18 +2565,38 @@ input[type=checkbox]:checked + .wpcf7-list-item-label:after {
 }
 
 .p-prize {
-  padding: 32px 16px;
-  padding: 2rem 1rem;
+  padding-top: 56px;
+  padding-top: 3.5rem;
+  padding-bottom: 32px;
+  padding-bottom: 2rem;
+  padding-left: 16px;
+  padding-left: 1rem;
+  padding-right: 16px;
+  padding-right: 1rem;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .p-prize {
-    padding-top: 6rem;
+    padding-top: 11.25rem;
     padding-bottom: 4.375rem;
     padding-left: 0;
     padding-left: initial;
     padding-right: 0;
     padding-right: initial;
   }
+}
+
+.p-prize::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f7cf75;
+  z-index: -1;
 }
 
 .p-prize__title-wrapper {
@@ -2542,11 +2639,20 @@ input[type=checkbox]:checked + .wpcf7-list-item-label:after {
 .p-prize__content {
   background: #fff;
   border-radius: 0.625rem;
-  padding: 24px 16px;
-  padding: 1.5rem 1rem;
+  padding-top: 40px;
+  padding-top: 2.5rem;
+  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
+  padding-left: 16px;
+  padding-left: 1rem;
+  padding-right: 16px;
+  padding-right: 1rem;
+  margin-top: -28px;
+  margin-top: -1.75rem;
 }
 @media screen and (min-width: 768px) {
   .p-prize__content {
+    margin-top: -2.5rem;
     padding: 5.125rem 3.25rem;
     border-radius: 2rem;
   }
@@ -2697,7 +2803,7 @@ input[type=checkbox]:checked + .wpcf7-list-item-label:after {
 @media screen and (min-width: 768px) {
   .p-single p {
     padding-top: 2.5rem;
-    line-height: 1.5;
+    line-height: 1.7;
   }
 }
 
@@ -2977,22 +3083,16 @@ input[type=checkbox]:checked + .wpcf7-list-item-label:after {
 }
 
 .p-subject::after {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .p-subject::after {
-    display: block;
-    position: absolute;
-    content: "";
-    background: url(../images/common/heart-mark-2.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 5.25rem;
-    height: 4.4375rem;
-    bottom: 7%;
-    left: 5%;
-  }
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #e9ea93;
+  z-index: -1;
 }
 
 @media screen and (min-width: 768px) {
@@ -3171,6 +3271,29 @@ input[type=checkbox]:checked + .wpcf7-list-item-label:after {
     width: 20rem;
     margin-bottom: 0;
     margin-bottom: initial;
+  }
+}
+
+.p-subject__row--last {
+  position: relative;
+}
+
+.p-subject__row--last::before {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .p-subject__row--last::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 5.25rem;
+    height: 4.4375rem;
+    left: -4.5rem;
+    bottom: -4.5rem;
+    background: url(../images/common/heart-mark-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 

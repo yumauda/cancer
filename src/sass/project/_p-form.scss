@@ -246,3 +246,6 @@ input[type="checkbox"]:checked + .wpcf7-list-item-label:after {
   color: $white !important;
   transition: 0.3s !important;
 }
+.p-form__input--short {
+  width: 45% !important;
+}

@@ -14,7 +14,7 @@
                     <?php the_post(); ?>
                     <div class="p-home__row">
                         <div class="p-home__title">
-                            <p class="p-home__date"><?php echo get_the_time('Y/n/j') ?></p>
+                            <p class="p-home__date"><?php echo get_the_time('Y.n.j') ?></p>
                         </div>
                         <div class="p-home__description">
                             <p class="p-home__text"><?php echo wp_trim_words(get_the_title(), 60, '...'); ?></p>

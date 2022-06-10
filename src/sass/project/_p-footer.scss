@@ -20,9 +20,15 @@
   width: 100%;
   z-index: 0;
   height: rem(150);
+  @include mq(md) {
+    top: rem(-133);
+  }
 }
 .p-footer__content {
   margin-top: rem(-240);
+  @include mq(md) {
+    margin-top: rem(-320);
+  }
 }
 .p-footer__img {
   width: 100%;

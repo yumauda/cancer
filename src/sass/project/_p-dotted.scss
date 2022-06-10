@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.p-dotted {
+  background-image: radial-gradient(
+      rgba(255, 255, 255, 0.2) 25%,
+      transparent 0%
+    ),
+    radial-gradient(rgba(255, 255, 255, 0.2) 25%, transparent 0%);
+  background-position: 0 0, 30px 30px;
+  background-size: 60px 60px;
+  overflow-x: hidden;
+}

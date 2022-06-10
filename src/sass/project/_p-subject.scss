@@ -23,20 +23,16 @@
   }
 }
 .p-subject::after {
-  display: none;
-  @include mq(md) {
-    display: block;
-    position: absolute;
-    content: "";
-    background: url(../images/common/heart-mark-2.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: rem(84);
-    height: rem(71);
-    bottom: 7%;
-    left: 5%;
-  }
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #e9ea93;
+  z-index: -1;
 }
 .p-subject__content {
   @include mq(md) {
@@ -92,7 +88,7 @@
 }
 .p-subject__detail {
   margin-top: rem(20);
-  @include mq(md){
+  @include mq(md) {
     margin-top: rem(48);
   }
 }
@@ -157,5 +153,24 @@
     font-size: rem(22);
     width: rem(320);
     margin-bottom: initial;
+  }
+}
+.p-subject__row--last {
+  position: relative;
+}
+.p-subject__row--last::before {
+  display: none;
+  @include mq(md) {
+    display: block;
+    position: absolute;
+    content: "";
+    width: rem(84);
+    height: rem(71);
+    left: rem(-72);
+    bottom: rem(-72);
+    background: url(../images/common/heart-mark-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
