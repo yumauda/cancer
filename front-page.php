@@ -9,7 +9,7 @@
     <section class="l-goods p-goods">
         <div class="l-inner">
             <div class="p-goods__content">
-                <h1 class="p-goods__title">ペアでがん検診を受ると<br class="u-mobile">山口県グッズが当たる！</h1>
+                <h1 class="p-goods__title">ペアでがん検診を受けると<br class="u-mobile">山口県グッズが当たる！</h1>
                 <div class="p-goods__img">
                     <picture>
                         <source srcset="<?php echo get_template_directory_uri(); ?>/images/common/goods-img_pc.png" media="(min-width: 768px)" />
@@ -233,7 +233,7 @@
                             （9：00～18：00&nbsp;&nbsp;土・日・祝日・年末年始を除く）</p>
                         <p class="p-subject__explain--bottom c-subject-text--smallRed">【よくある質問について】</p>
                         <p class="c-subject-text--other">キャンペーンや検診についてよくいただく質問をまとめています。</p>
-                        <a href="https://first-step-yuma.com/cancer/wp-content/uploads/2022/06/faq.pdf" class="p-subject__pdf" target="_blank" rel="noopener noreferrer">Q＆A&nbsp;ダウンロード（PDF）</a>
+                        <a href="https://yamaguchi-gankenshin.jp/wp-content/uploads/2022/06/faq.pdf" class="p-subject__pdf" target="_blank" rel="noopener noreferrer">Q＆A&nbsp;ダウンロード（PDF）</a>
                     </dd>
                 </div>
                 <div class="p-subject__row p-subject__row--last">
@@ -409,7 +409,7 @@
                                     <p class="c-prize-title">フジグラン山口</p>
                                 </div>
                                 <div class="p-sponsor__description">
-                                    <p class="c-prize-description">フジ商品券<br>・1,000円分×2組(１・２回目各抽選)</p>
+                                    <p class="c-prize-description">フジ商品券<br>・1,000円分×2組（1・2回目各抽選）</p>
                                     <p class="p-sponsor__small">フジ全店舗の他、フジカンパニーズ各社でご利用いただけます。</p>
                                 </div>
                             </div>
@@ -424,7 +424,7 @@
                                 </div>
                                 <div class="p-sponsor__description">
                                     <p class="c-prize-description">マウスカバー<br>
-                                    ・2個セットをペア1組（1・2回目各抽選）</p>
+                                    ・2個セットをペア3組（1回目1組、2回目2組）</p>
                                     <p class="p-sponsor__small">飛沫の拡散抑制を目的に競技ウエアで使われる2way素材で作ったマウスカバー。乾きやすいので毎日気持ちよくお使いいただけます。</p>
                                 </div>
                             </div>
@@ -439,7 +439,7 @@
                                 </div>
                                 <div class="p-sponsor__description">
                                     <p class="c-prize-description">試合観戦チケット<br>
-                                    ・2枚セットをペア1組（1・2回目各抽選）</p>
+                                    ・2枚セットをペア1組（2回目抽選）</p>
                                     <p class="p-sponsor__small">2022シーズン&nbsp;レノファ山口ホームゲームの観戦チケットです。</p>
                                 </div>
                             </div>
@@ -523,7 +523,7 @@
                                 <img src="<?php echo get_template_directory_uri() ?>/images/common/company-img6.jpg" alt="株式会社イズミ">
                             </figure>
                             <p class="p-company__name">株式会社イズミ</p>
-                            <a href="<?php echo esc_url('https://www.izumi.co.jp/corp'); ?>" class="p-company__link" target="_blank" rel="noopener noreferrer"></a>
+                            <a href="<?php echo esc_url('https://www.izumi.co.jp/'); ?>" class="p-company__link" target="_blank" rel="noopener noreferrer"></a>
                         </li>
                         <li class="p-company__card">
                             <figure class="p-company__img">
@@ -543,14 +543,14 @@
                             <figure class="p-company__img">
                                 <img src="<?php echo get_template_directory_uri() ?>/images/common/company-img9.jpg" alt="レノファ株式会社">
                             </figure>
-                            <p class="p-company__name">レノファ株式会社</p>
+                            <p class="p-company__name">株式会社レノファ山口</p>
                             <a href="<?php echo esc_url('https://www.renofa.com'); ?>" class="p-company__link" target="_blank" rel="noopener noreferrer"></a>
                         </li>
                         <li class="p-company__card p-company__card--last">
                             <figure class="p-company__img">
                                 <img src="<?php echo get_template_directory_uri() ?>/images/common/company-img10.jpg" alt="フジクラン山口">
                             </figure>
-                            <p class="p-company__name">フジクラン山口</p>
+                            <p class="p-company__name">株式会社フジ・リテイリング<br>フジグラン山口</p>
                             <a href="<?php echo esc_url('https://www.the-fuji.com'); ?>" class="p-company__link" target="_blank" rel="noopener noreferrer"></a>
                         </li>
                     </ul>
