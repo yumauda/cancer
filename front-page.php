@@ -69,7 +69,7 @@
                         <a href="<?php echo esc_url('https://lin.ee/o23fJhF'); ?>" class="p-consultation__link" target="_blank" rel="noopener noreferrer">
                             <img src="<?php echo get_template_directory_uri() ?>/images/common/line.svg" alt="ライン">
                         </a>
-                        <a href="<?php echo esc_url('https://www.instagram.com/sasotte_gankenshin/'); ?>" class="p-consultation__link" target="_blank" rel="noopener noreferrer">
+                        <a href="<?php echo esc_url('https://www.instagram.com/sasotte_gan_kenshin/'); ?>" class="p-consultation__link" target="_blank" rel="noopener noreferrer">
                             <img src="<?php echo get_template_directory_uri() ?>/images/common/instagram.svg" alt="インスタグラム">
                         </a>
                     </div>
@@ -145,7 +145,7 @@
                 </div>
                 <figure class="p-news__img">
                     <!-- <img src="<?php echo get_template_directory_uri() ?>/images/common/news-img.png" alt="twitterニュース画像"> -->
-                    <?php echo do_shortcode('[instagram-feed feed=1]'); ?>
+                    <?php echo do_shortcode('[instagram-feed feed=2]'); ?>
                 </figure>
             </div>
         </div>
@@ -297,7 +297,7 @@
                     <div class="p-sponsor__content">
                         <div class="p-sponsor__row">
                             <figure class="p-sponsor__img">
-                                <img src="<?php echo get_template_directory_uri() ?>/images/common/prize-img3.png" alt="電子体温計けんおんくん">
+                                <img src="<?php echo get_template_directory_uri() ?>/images/common/prize-img3.jpg" alt="電子体温計けんおんくん">
                             </figure>
                             <div class="p-sponsor__detail">
                                 <div class="p-sponsor__detail-title">
@@ -312,22 +312,22 @@
                         </div>
                         <div class="p-sponsor__row">
                             <figure class="p-sponsor__img">
-                                <img src="<?php echo get_template_directory_uri() ?>/images/common/prize-img4.png" alt="アフラック">
+                                <img src="<?php echo get_template_directory_uri() ?>/images/common/prize-aflac.jpg" alt="アフラック">
                             </figure>
                             <div class="p-sponsor__detail">
                                 <div class="p-sponsor__detail-title">
                                     <p class="c-prize-title">アフラック</p>
                                 </div>
                                 <div class="p-sponsor__description">
-                                    <p class="c-prize-description">フォームローラー<br>
-                                        ・2個セットをペア1組（1・2回目各抽選）</p>
-                                    <p class="p-sponsor__small">ストレッチなどに使用できるフォームローラーで、日々の疲れを癒してください。</p>
+                                    <p class="c-prize-description">携帯用除菌ハンドジェル<br>
+                                    ・2個セットをペア1組（1回目抽選）</p>
+                                    <p class="p-sponsor__small">場所を問わずに手を清潔に！日本製の携帯用ハンドジェルです。外出時に便利な、1回分使い切り量の個包装です。</p>
                                 </div>
                             </div>
                         </div>
                         <div class="p-sponsor__row">
                             <figure class="p-sponsor__img">
-                                <img src="<?php echo get_template_directory_uri() ?>/images/common/prize-img4.png" alt="東京海上日動火災保険株式会社">
+                                <img src="<?php echo get_template_directory_uri() ?>/images/common/prize-img5.jpg" alt="タニタヘルスメーター">
                             </figure>
                             <div class="p-sponsor__detail">
                                 <div class="p-sponsor__detail-title">
@@ -357,22 +357,22 @@
                         </div>
                         <div class="p-sponsor__row">
                             <figure class="p-sponsor__img2">
-                                <img src="<?php echo get_template_directory_uri() ?>/images/common/prize-img7.jpg" alt="シャワーヘッド">
+                                <img src="<?php echo get_template_directory_uri() ?>/images/common/prize-seimei.jpg" alt="シャワーヘッド">
                             </figure>
                             <div class="p-sponsor__detail">
                                 <div class="p-sponsor__detail-title">
                                     <p class="c-prize-title">第一生命保険株式会社</p>
                                 </div>
                                 <div class="p-sponsor__description">
-                                    <p class="c-prize-description">シャワーヘッド<br>
-                                        ・2個セットをペア1組（1・2回目各抽選）</p>
-                                    <p class="p-sponsor__small">濾過と塩素除去、節水効果80％、極小の気泡、美肌・美髪</p>
+                                    <p class="c-prize-description">マッサージクッション<br>
+                                    ・2個セットをペア1組（1・2回目各抽選）</p>
+                                    <p class="p-sponsor__small">背中、腰、お尻&nbsp;&nbsp;ストレッチ１分間で4000回の振動のマッサージクッションです。</p>
                                 </div>
                             </div>
                         </div>
                         <div class="p-sponsor__row">
                             <figure class="p-sponsor__img3">
-                                <img src="<?php echo get_template_directory_uri() ?>/images/common/prize-img8.jpg" alt="ゆめタウン・ゆめマート商品券">
+                                <img src="<?php echo get_template_directory_uri() ?>/images/common/prize-img08.jpg" alt="ゆめタウン・ゆめマート商品券">
                             </figure>
                             <div class="p-sponsor__detail">
                                 <div class="p-sponsor__detail-title">
@@ -416,31 +416,31 @@
                         </div>
                         <div class="p-sponsor__row">
                             <figure class="p-sponsor__img6">
-                                <img src="<?php echo get_template_directory_uri() ?>/images/common/prize-img10.jpg" alt="骨盤ベルト">
+                                <img src="<?php echo get_template_directory_uri() ?>/images/common/prize-mizuno.jpg" alt="骨盤ベルト">
                             </figure>
                             <div class="p-sponsor__detail">
                                 <div class="p-sponsor__detail-title">
                                     <p class="c-prize-title">ミズノ株式会社</p>
                                 </div>
                                 <div class="p-sponsor__description">
-                                    <p class="c-prize-description">骨盤ベルト&nbsp;&nbsp;M/1&nbsp;&nbsp;L/1<br>
-                                        ・2個セットをペア1組（1・2回目各抽選）</p>
-                                    <p class="p-sponsor__small">悩み解消の鍵は骨盤の安定！骨盤をグッとしっかり固定！</p>
+                                    <p class="c-prize-description">マウスカバー<br>
+                                    ・2個セットをペア1組（1・2回目各抽選）</p>
+                                    <p class="p-sponsor__small">飛沫の拡散抑制を目的に競技ウエアで使われる2way素材で作ったマウスカバー。乾きやすいので毎日気持ちよくお使いいただけます。</p>
                                 </div>
                             </div>
                         </div>
                         <div class="p-sponsor__row">
                             <figure class="p-sponsor__img">
-                                <img src="<?php echo get_template_directory_uri() ?>/images/common/prize-img4.png" alt="レノファ山口観戦チケット">
+                                <img src="<?php echo get_template_directory_uri() ?>/images/common/prize-img12.jpg" alt="レノファ山口観戦チケット">
                             </figure>
                             <div class="p-sponsor__detail">
                                 <div class="p-sponsor__detail-title">
                                     <p class="c-prize-title">株式会社レノファ山口</p>
                                 </div>
                                 <div class="p-sponsor__description">
-                                    <p class="c-prize-description">レノファ山口観戦チケット<br>
-                                        ・2枚セットをペア1組（1・2回目各抽選）</p>
-                                    <p class="p-sponsor__small">レノファ山口ホームゲーム&nbsp;&nbsp;MS席</p>
+                                    <p class="c-prize-description">試合観戦チケット<br>
+                                    ・2枚セットをペア1組（1・2回目各抽選）</p>
+                                    <p class="p-sponsor__small">2022シーズン&nbsp;レノファ山口ホームゲームの観戦チケットです。</p>
                                 </div>
                             </div>
                         </div>
@@ -569,38 +569,38 @@
                 <ul class="p-link__cards">
                     <li class="p-link__card">
                         <figure class="p-link__img">
-                            <img src="<?php echo get_template_directory_uri() ?>/images/common/link-img.png" alt="誘ってがん検診キャンペーン">
+                            <img src="<?php echo get_template_directory_uri() ?>/images/common/link-img01.png" alt="休日・平日夜間がん検診">
                         </figure>
                         <div class="p-link__detail">
                             <a href="<?php echo esc_url('https://www.pref.yamaguchi.lg.jp/soshiki/45/14401.html'); ?>" class="p-link__link" target="_blank" rel="noopener noreferrer">休日・平日夜間がん検診</a>
-                            <p class="p-link__text">要約文が入ります。要約文が入ります。要約文が入ります。要約文が入ります。</p>
+                            <p class="p-link__text">お仕事の都合などでがん検診が受診できない方のため、休日や平日夜間にもがん検診（乳がん、子宮頸がん、大腸がん）が受診できるよう、9月から12月の間、「休日・平日夜間がん検診」を実施します。（今年度の医療機関のリストは、9月頃に公表します。）</p>
                         </div>
                     </li>
                     <li class="p-link__card">
                         <figure class="p-link__img">
-                            <img src="<?php echo get_template_directory_uri() ?>/images/common/link-img2.png" alt="「がん」は自分に関係ないと思っていませんか…">
+                            <img src="<?php echo get_template_directory_uri() ?>/images/common/link-img02.png" alt="「がん」は自分に関係ないと思っていませんか…">
                         </figure>
                         <div class="p-link__detail">
                             <a href="<?php echo esc_url('https://www.pref.yamaguchi.lg.jp/soshiki/45/14402.html'); ?>" class="p-link__link" target="_blank" rel="noopener noreferrer">「がん」は自分に関係ないと思っていませんか…</a>
-                            <p class="p-link__text">要約文が入ります。要約文が入ります。要約文が入ります。要約文が入ります。要約文が入ります。要約文が入ります。</p>
+                            <p class="p-link__text">国民の2人に1人は一生のうちに1回はがんになるといわれていますが、がんは早期に発見し早期に治療すれば、治る可能性が高くなる病気です。県では、がん検診の必要性をまとめたリーフレットを作成しています。</p>
                         </div>
                     </li>
                     <li class="p-link__card">
                         <figure class="p-link__img">
-                            <img src="<?php echo get_template_directory_uri() ?>/images/common/link-img3.png" alt="がん検診早期発見事例集">
+                            <img src="<?php echo get_template_directory_uri() ?>/images/common/link-img03.png" alt="がん検診早期発見事例集">
                         </figure>
                         <div class="p-link__detail">
-                            <a href="<?php echo esc_url('https://www.pref.yamaguchi.lg.jp/uploaded/attachment/25736.pdf'); ?>" class="p-link__link" target="_blank" rel="noopener noreferrer">がん検診早期発見事例集（PDF：9.3MB）</a>
-                            <p class="p-link__text">要約文が入ります。要約文が入ります。要約文が入ります。要約文が入ります。要約文が入ります。要約文が入ります。</p>
+                            <a href="<?php echo esc_url('https://www.pref.yamaguchi.lg.jp/uploaded/attachment/25736.pdf'); ?>" class="p-link__link" target="_blank" rel="noopener noreferrer">がん検診早期発見事例集</a>
+                            <p class="p-link__text">がんにかかられた方、がん検診によりがんを早期発見した方の体験談をご紹介しています。</p>
                         </div>
                     </li>
                     <li class="p-link__card">
                         <figure class="p-link__img">
-                            <img src="<?php echo get_template_directory_uri() ?>/images/common/link-img.png" alt="がん検診に関するお問い合わせ窓口">
+                            <img src="<?php echo get_template_directory_uri() ?>/images/common/link-img04.png" alt="がん検診に関するお問い合わせ窓口">
                         </figure>
                         <div class="p-link__detail">
                             <a href="<?php echo esc_url('https://www.pref.yamaguchi.lg.jp/soshiki/45/14369.html'); ?>" class="p-link__link" target="_blank" rel="noopener noreferrer">がん検診に関するお問い合わせ窓口</a>
-                            <p class="p-link__text">要約文が入ります。要約文が入ります。要約文が入ります。要約文が入ります。要約文が入ります。要約文が入ります。</p>
+                            <p class="p-link__text">がんによって悩んでいる患者の方や、その家族の方のため、がん相談全般にお答えする「山口県がん総合相談窓口」を設置しています。</p>
                         </div>
                     </li>
                 </ul>
